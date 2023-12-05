@@ -31,6 +31,7 @@ namespace Athena
         {
             string username = textBoxUsername.Text;
             string password = textBoxPass.Text;
+
             if (username == "1")
             {
                 var signUp = new SignUpFormView();
