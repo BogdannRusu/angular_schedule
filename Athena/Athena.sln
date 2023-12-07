@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.34301.259
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Athena", "Athena\Athena.csproj", "{5D6D1252-5D8C-490C-A922-43F1F5D848A5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Athena.CRM", "Athena.CRM\Athena.CRM.csproj", "{7A7A5F51-4D69-459A-B356-1A1156AAFF96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Athena.Management", "Athena.Management\Athena.Management.csproj", "{75C5E324-60EA-435F-8A8D-94BAFD8FCFBC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{5D6D1252-5D8C-490C-A922-43F1F5D848A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D6D1252-5D8C-490C-A922-43F1F5D848A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D6D1252-5D8C-490C-A922-43F1F5D848A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A7A5F51-4D69-459A-B356-1A1156AAFF96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A7A5F51-4D69-459A-B356-1A1156AAFF96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A7A5F51-4D69-459A-B356-1A1156AAFF96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A7A5F51-4D69-459A-B356-1A1156AAFF96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75C5E324-60EA-435F-8A8D-94BAFD8FCFBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75C5E324-60EA-435F-8A8D-94BAFD8FCFBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75C5E324-60EA-435F-8A8D-94BAFD8FCFBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75C5E324-60EA-435F-8A8D-94BAFD8FCFBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
