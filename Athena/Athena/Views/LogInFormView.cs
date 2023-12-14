@@ -38,6 +38,8 @@ namespace Athena
                 signUp.Show();
                 Hide();
             }
+
+            using (var context = new AthenaModel())  { }
         }
     }
 }

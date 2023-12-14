@@ -59,7 +59,6 @@ D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\bin\Deb
 D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\obj\Debug\Athena.Management.csproj.AssemblyReference.cache
 D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\obj\Debug\Athena.Management.MainFormView.resources
 D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\obj\Debug\Athena.Management.Properties.Resources.resources
-D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\obj\Debug\Athena.Management.Views.Profesori.resources
 D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\obj\Debug\Athena.Management.WaitFormView.resources
 D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\obj\Debug\Athena.Management.csproj.GenerateResource.cache
 D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\obj\Debug\Athena.Management.exe.licenses
@@ -67,3 +66,6 @@ D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\obj\Deb
 D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\obj\Debug\Athena.Management.csproj.CopyComplete
 D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\obj\Debug\Athena.Management.exe
 D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\obj\Debug\Athena.Management.pdb
+D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\bin\Debug\EntityFramework.SqlServer.dll
+D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\bin\Debug\MySql.Data.dll
+D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\bin\Debug\EntityFramework.SqlServer.xml
