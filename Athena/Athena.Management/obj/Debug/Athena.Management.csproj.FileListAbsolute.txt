@@ -9,6 +9,8 @@ D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\bin\Deb
 D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\bin\Debug\DevExpress.XtraBars.v16.2.dll
 D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\bin\Debug\DevExpress.XtraEditors.v16.2.dll
 D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\bin\Debug\EntityFramework.dll
+D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\bin\Debug\EntityFramework.SqlServer.dll
+D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\bin\Debug\MySql.Data.dll
 D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\bin\Debug\System.Buffers.dll
 D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\bin\Debug\System.Memory.dll
 D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\bin\Debug\System.Numerics.Vectors.dll
@@ -22,6 +24,7 @@ D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\bin\Deb
 D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\bin\Debug\DevExpress.Sparkline.v16.2.Core.xml
 D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\bin\Debug\DevExpress.XtraEditors.v16.2.xml
 D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\bin\Debug\EntityFramework.xml
+D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\bin\Debug\EntityFramework.SqlServer.xml
 D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\bin\Debug\System.Buffers.xml
 D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\bin\Debug\System.Memory.xml
 D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\bin\Debug\System.Numerics.Vectors.xml
@@ -66,6 +69,3 @@ D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\obj\Deb
 D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\obj\Debug\Athena.Management.csproj.CopyComplete
 D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\obj\Debug\Athena.Management.exe
 D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\obj\Debug\Athena.Management.pdb
-D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\bin\Debug\EntityFramework.SqlServer.dll
-D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\bin\Debug\MySql.Data.dll
-D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena.Management\bin\Debug\EntityFramework.SqlServer.xml
