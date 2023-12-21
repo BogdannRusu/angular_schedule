@@ -9,7 +9,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Athena</RootNamespace>
     <AssemblyName>Athena</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -61,11 +61,17 @@
     <Reference Include="K4os.Hash.xxHash, Version=1.0.8.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
       <HintPath>..\packages\K4os.Hash.xxHash.1.0.8\lib\net462\K4os.Hash.xxHash.dll</HintPath>
     </Reference>
+    <Reference Include="MaterialSkin, Version=2.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.2.2.1.3\lib\net461\MaterialSkin.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.8.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
-    <Reference Include="MySql.Data, Version=6.8.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <HintPath>..\packages\MySql.Data.6.8.8\lib\net45\MySql.Data.dll</HintPath>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=7.0.0.1, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.7.0.1\lib\net462\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Siticone.Desktop.UI, Version=2.1.1.0, Culture=neutral, PublicKeyToken=9683591576b7f0b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Siticone.Desktop.UI.2.1.1\lib\net40\Siticone.Desktop.UI.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -76,6 +82,9 @@
     <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=7.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.7.0.2\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
     <Reference Include="System.Management" />
     <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
@@ -104,7 +113,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataModule\AthenaModel.cs" />
+    <Compile Include="DataModule\AthenaModule.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AthenaModule.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\AthenaModule.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AthenaModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\AthenaModule.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AthenaModule.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\cabinete.cs">
+      <DependentUpon>AthenaModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\grupe.cs">
+      <DependentUpon>AthenaModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\links.cs">
+      <DependentUpon>AthenaModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\profesori.cs">
+      <DependentUpon>AthenaModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule\users.cs">
+      <DependentUpon>AthenaModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainFormView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MainFormView.designer.cs">
+      <DependentUpon>MainFormView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\LogInFormView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +163,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Views\MainFormView.resx">
+      <DependentUpon>MainFormView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\LogInFormView.resx">
       <DependentUpon>LogInFormView.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,6 +182,13 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EntityDeploy Include="DataModule\AthenaModule.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AthenaModule.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DataModule\AthenaModule.edmx.diagram">
+      <DependentUpon>AthenaModule.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -162,6 +216,21 @@
     <None Include="Resources\back1.png" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DataModule\AthenaModule.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AthenaModule.edmx</DependentUpon>
+      <LastGenOutput>AthenaModule.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DataModule\AthenaModule.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AthenaModule.edmx</DependentUpon>
+      <LastGenOutput>AthenaModule.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

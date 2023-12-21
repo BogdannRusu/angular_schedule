@@ -39,7 +39,7 @@ namespace Athena
                 Hide();
             }
 
-            using (var context = new AthenaModel())  { }
+           // using (var context = new AthenaModel())  { }
         }
     }
 }

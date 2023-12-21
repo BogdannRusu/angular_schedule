@@ -10,8 +10,3 @@ C:\Users\bogda\source\repos\Athena\Athena\obj\Debug\Athena.pdb
 C:\Users\bogda\source\repos\Athena\Athena\obj\Debug\Athena.LogInFormView.resources
 C:\Users\bogda\source\repos\Athena\Athena\obj\Debug\Athena.SignUpFormView.resources
 D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena\obj\Debug\Athena.csproj.AssemblyReference.cache
-D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena\obj\Debug\Athena.LogInFormView.resources
-D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena\obj\Debug\Athena.SignUpFormView.resources
-D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena\obj\Debug\Athena.Properties.Resources.resources
-D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena\obj\Debug\Athena.csproj.GenerateResource.cache
-D:\Bogdan\Alternative Projects\angular_schedule\Athena\Athena\obj\Debug\Athena.csproj.CoreCompileInputs.cache

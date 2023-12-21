@@ -116,6 +116,7 @@ namespace Athena
             // 
             this.textBoxPass.BackColor = System.Drawing.SystemColors.Control;
             this.textBoxPass.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.textBoxPass.Location = new System.Drawing.Point(27, 267);
             this.textBoxPass.Name = "textBoxPass";
             this.textBoxPass.Size = new System.Drawing.Size(518, 32);
@@ -125,6 +126,7 @@ namespace Athena
             // 
             this.textBoxUsername.BackColor = System.Drawing.SystemColors.Control;
             this.textBoxUsername.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.textBoxUsername.Location = new System.Drawing.Point(27, 172);
             this.textBoxUsername.Name = "textBoxUsername";
             this.textBoxUsername.Size = new System.Drawing.Size(518, 32);
