@@ -1,0 +1,43 @@
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\obj\Debug\Athena Solution.csproj.AssemblyReference.cache
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\obj\Debug\LoginWindowView.g.cs
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\obj\Debug\SignUpWindowView.g.cs
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\obj\Debug\SplashScreenView.g.cs
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\obj\Debug\Views\Home.g.cs
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\obj\Debug\Views\Orders.g.cs
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\obj\Debug\Views\Teachers.g.cs
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\obj\Debug\App.g.cs
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\obj\Debug\Athena Solution_Content.g.cs
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\obj\Debug\Athena Solution_MarkupCompile.cache
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\obj\Debug\Athena Solution_MarkupCompile.lref
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\obj\Debug\MainWindow.g.cs
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\obj\Debug\App.baml
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\obj\Debug\LoginWindowView.baml
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\obj\Debug\SignUpWindowView.baml
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\obj\Debug\SplashScreenView.baml
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\obj\Debug\Views\Home.baml
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\obj\Debug\Views\Orders.baml
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\obj\Debug\Views\Teachers.baml
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\obj\Debug\MainWindow.baml
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\obj\Debug\Athena Solution.exe
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\obj\Debug\Athena Solution.pdb
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\bin\Debug\Athena Solution.exe.config
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\bin\Debug\Athena Solution.exe
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\bin\Debug\Athena Solution.pdb
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\bin\Debug\EntityFramework.dll
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\bin\Debug\MaterialDesignColors.dll
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\bin\Debug\EntityFramework.xml
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\bin\Debug\MaterialDesignColors.pdb
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\obj\Debug\Utilities\DataTemplate.baml
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\obj\Debug\Athena Solution.g.resources
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\obj\Debug\Athena_Solution.Properties.Resources.resources
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\obj\Debug\Athena Solution.csproj.GenerateResource.cache
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\obj\Debug\Athena Solution.csproj.CoreCompileInputs.cache
+C:\Users\bogda\source\repos\Athena Solution\Athena Solution\obj\Debug\Athena Solution.csproj.CopyComplete

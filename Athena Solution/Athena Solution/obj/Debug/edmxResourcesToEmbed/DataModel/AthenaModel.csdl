@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AthenaDbContext" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="cabinete">
+    <Key>
+      <PropertyRef Name="id_cabinet" />
+    </Key>
+    <Property Name="id_cabinet" Type="Int32" Nullable="false" />
+    <Property Name="nr_cabinet" Type="Int32" Nullable="false" />
+    <Property Name="is_active" Type="Byte" Nullable="false" />
+    <NavigationProperty Name="links" Relationship="Self.links_ibfk_3" FromRole="cabinete" ToRole="links" />
+  </EntityType>
+  <EntityType Name="grupe">
+    <Key>
+      <PropertyRef Name="id_grupa" />
+    </Key>
+    <Property Name="id_grupa" Type="Int32" Nullable="false" />
+    <Property Name="nume_grupa" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="is_active" Type="Byte" Nullable="false" />
+    <Property Name="anul" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="links" Relationship="Self.links_ibfk_2" FromRole="grupe" ToRole="links" />
+  </EntityType>
+  <EntityType Name="links">
+    <Key>
+      <PropertyRef Name="id_link" />
+    </Key>
+    <Property Name="id_link" Type="Int32" Nullable="false" />
+    <Property Name="id_profesor" Type="Int32" Nullable="false" />
+    <Property Name="id_grupa" Type="Int32" Nullable="false" />
+    <Property Name="id_cabinet" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="cabinete" Relationship="Self.links_ibfk_3" FromRole="links" ToRole="cabinete" />
+    <NavigationProperty Name="grupe" Relationship="Self.links_ibfk_2" FromRole="links" ToRole="grupe" />
+    <NavigationProperty Name="profesori" Relationship="Self.links_ibfk_1" FromRole="links" ToRole="profesori" />
+  </EntityType>
+  <EntityType Name="profesori">
+    <Key>
+      <PropertyRef Name="id_prof" />
+    </Key>
+    <Property Name="id_prof" Type="Int32" Nullable="false" />
+    <Property Name="nume" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="prenume" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="patronimic" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="data_activarii" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="end_data_activarii" Type="DateTime" Precision="0" />
+    <Property Name="is_active" Type="Byte" Nullable="false" />
+    <Property Name="profesie" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="links" Relationship="Self.links_ibfk_1" FromRole="profesori" ToRole="links" />
+  </EntityType>
+  <EntityType Name="users">
+    <Key>
+      <PropertyRef Name="user_id" />
+    </Key>
+    <Property Name="user_id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="is_active" Type="Int16" Nullable="false" />
+  </EntityType>
+  <Association Name="links_ibfk_3">
+    <End Role="cabinete" Type="Self.cabinete" Multiplicity="1" />
+    <End Role="links" Type="Self.links" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="cabinete">
+        <PropertyRef Name="id_cabinet" />
+      </Principal>
+      <Dependent Role="links">
+        <PropertyRef Name="id_cabinet" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="links_ibfk_2">
+    <End Role="grupe" Type="Self.grupe" Multiplicity="1" />
+    <End Role="links" Type="Self.links" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="grupe">
+        <PropertyRef Name="id_grupa" />
+      </Principal>
+      <Dependent Role="links">
+        <PropertyRef Name="id_grupa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="links_ibfk_1">
+    <End Role="profesori" Type="Self.profesori" Multiplicity="1" />
+    <End Role="links" Type="Self.links" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="profesori">
+        <PropertyRef Name="id_prof" />
+      </Principal>
+      <Dependent Role="links">
+        <PropertyRef Name="id_profesor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="AthenaModel" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="cabinete" EntityType="Self.cabinete" />
+    <EntitySet Name="grupe" EntityType="Self.grupe" />
+    <EntitySet Name="links" EntityType="Self.links" />
+    <EntitySet Name="profesori" EntityType="Self.profesori" />
+    <EntitySet Name="users" EntityType="Self.users" />
+    <AssociationSet Name="links_ibfk_3" Association="Self.links_ibfk_3">
+      <End Role="cabinete" EntitySet="cabinete" />
+      <End Role="links" EntitySet="links" />
+    </AssociationSet>
+    <AssociationSet Name="links_ibfk_2" Association="Self.links_ibfk_2">
+      <End Role="grupe" EntitySet="grupe" />
+      <End Role="links" EntitySet="links" />
+    </AssociationSet>
+    <AssociationSet Name="links_ibfk_1" Association="Self.links_ibfk_1">
+      <End Role="profesori" EntitySet="profesori" />
+      <End Role="links" EntitySet="links" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,98 @@
+﻿using Athena_Solution.DataModel;
+using MaterialDesignThemes.Wpf;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
+
+namespace Athena_Solution
+{
+    /// <summary>
+    /// Interaction logic for LoginWindowView.xaml
+    /// </summary>
+    public partial class LoginWindowView : Window
+    {
+        AthenaModel context = new AthenaModel();
+        public LoginWindowView()
+        {
+            InitializeComponent();
+        }
+
+        //Coudl la Tematica Dark ========================>
+        public bool IsDarkTheme { get; set; }
+        private readonly PaletteHelper paletteHelper = new PaletteHelper();
+        //===================================>
+
+        protected override void OnMouseLeftButtonDown(MouseButtonEventArgs e)
+        {
+            base.OnMouseLeftButtonDown(e);
+            DragMove();
+        }
+
+        private void toggleTheme(object sender, RoutedEventArgs e)
+        {
+            //Codul la tema ========================>
+            ITheme theme = paletteHelper.GetTheme();
+            if (IsDarkTheme = theme.GetBaseTheme() == BaseTheme.Dark)
+            {
+                IsDarkTheme = false;
+                theme.SetBaseTheme(Theme.Light);
+            }
+            else
+            {
+                IsDarkTheme = true;
+                theme.SetBaseTheme(Theme.Dark);
+            }
+
+            paletteHelper.SetTheme(theme);
+        }
+
+        public void Autentification()
+        {
+            using(var context = new AthenaModel())
+            {
+                if (context.users.Any())
+                {
+                    Hide();
+                   var main = new MainWindow();
+                   main.ShowDialog();
+                }
+            }
+        }
+
+        private void exitApp(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private void loginBtn_Click(object sender, RoutedEventArgs e)
+        {
+             if (txtUsername.Text != "1")
+             {
+                Autentification();
+             }
+               else
+               {
+                    var sign = new SignUpWindowView();
+                    sign.ShowDialog();
+                    Hide();
+               }
+
+        }
+
+        private void signupBtn_Click(object sender, RoutedEventArgs e)
+        {
+          
+            
+        }
+    }
+}
