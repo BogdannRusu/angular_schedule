@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\bogda\source\repos\Athena Solution\Athena Solution\obj\Debug\
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\
 Athena_Solution
 none
 false
 DEBUG;TRACE
-C:\Users\bogda\source\repos\Athena Solution\Athena Solution\App.xaml
-8-983074985
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\App.xaml
+11-174236213
 2224467605
-321509651029
-211377299163
-LoginWindowView.xaml;MainWindow.xaml;SignUpWindowView.xaml;SplashScreenView.xaml;Utilities\DataTemplate.xaml;Views\Home.xaml;Views\Orders.xaml;Views\Teachers.xaml;
+1751346682
+211669401663
+Images\Icons\Icons.xaml;Views\LoginWindowView.xaml;MainWindow.xaml;Pages\HomePage.xaml;Pages\NotesPage.xaml;Pages\PaymentPage.xaml;Pages\SoundsPage.xaml;Views\SignUpWindowView.xaml;SplashScreenView.xaml;Style\MainStyle.xaml;Theme\LightTheme.xaml;
 
-False
+True
 

@@ -2,8 +2,6 @@
     <Application x:Class="Athena_Solution.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:Athena_Solution"
-             xmlns:vm="clr-namespace:Athena_Solution.Views"
              StartupUri="SplashScreenView.xaml">
     <Application.Resources>
         <ResourceDictionary>
@@ -12,6 +10,11 @@
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
+
+                <ResourceDictionary Source="Theme/LightTheme.xaml"/>
+                <ResourceDictionary Source="Images/Icons/Icons.xaml"/>
+                <ResourceDictionary Source="Style/MainStyle.xaml"/>
+                
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

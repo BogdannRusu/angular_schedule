@@ -41,3 +41,50 @@ C:\Users\bogda\source\repos\Athena Solution\Athena Solution\obj\Debug\Athena_Sol
 C:\Users\bogda\source\repos\Athena Solution\Athena Solution\obj\Debug\Athena Solution.csproj.GenerateResource.cache
 C:\Users\bogda\source\repos\Athena Solution\Athena Solution\obj\Debug\Athena Solution.csproj.CoreCompileInputs.cache
 C:\Users\bogda\source\repos\Athena Solution\Athena Solution\obj\Debug\Athena Solution.csproj.CopyComplete
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\bin\Debug\Athena Solution.exe.config
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\bin\Debug\Athena Solution.exe
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\bin\Debug\EntityFramework.dll
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\bin\Debug\EntityFramework.SqlServer.dll
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\bin\Debug\MaterialDesignColors.dll
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\bin\Debug\Microsoft.Xaml.Behaviors.dll
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\bin\Debug\EntityFramework.xml
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\bin\Debug\EntityFramework.SqlServer.xml
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\bin\Debug\MaterialDesignColors.pdb
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\bin\Debug\Microsoft.Xaml.Behaviors.xml
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Athena Solution.csproj.AssemblyReference.cache
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Images\Icons\Icons.baml
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\MainWindow.g.cs
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Pages\HomePage.g.cs
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Pages\NotesPage.g.cs
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Pages\PaymentPage.g.cs
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Pages\SoundsPage.g.cs
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\App.g.cs
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Athena Solution_Content.g.cs
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Athena Solution_MarkupCompile.cache
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Athena Solution_MarkupCompile.lref
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\App.baml
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\MainWindow.baml
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Pages\HomePage.baml
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Pages\NotesPage.baml
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Pages\PaymentPage.baml
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Pages\SoundsPage.baml
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Style\MainStyle.baml
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Theme\LightTheme.baml
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Athena Solution.g.resources
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Athena_Solution.Properties.Resources.resources
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Athena Solution.csproj.GenerateResource.cache
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Athena Solution.csproj.CoreCompileInputs.cache
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Athena Solution.csproj.CopyComplete
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Athena Solution.exe
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Athena Solution.pdb
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Views\LoginWindowView.g.cs
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Views\SignUpWindowView.g.cs
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Views\LoginWindowView.baml
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Views\SignUpWindowView.baml
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\bin\Debug\Athena Solution.pdb
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\SplashScreenView.g.cs
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\SplashScreenView.baml

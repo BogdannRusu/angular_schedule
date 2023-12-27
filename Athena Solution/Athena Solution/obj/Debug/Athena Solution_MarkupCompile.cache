@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\App.xaml
-8-983074985
+11-174236213
 2224467605
-321509651029
+162133435300
 211669401663
-LoginWindowView.xaml;MainWindow.xaml;SignUpWindowView.xaml;SplashScreenView.xaml;Utilities\DataTemplate.xaml;Views\Home.xaml;Views\Orders.xaml;Views\Teachers.xaml;
+Images\Icons\Icons.xaml;Views\LoginWindowView.xaml;MainWindow.xaml;Pages\HomePage.xaml;Pages\NotesPage.xaml;Pages\PaymentPage.xaml;Pages\SoundsPage.xaml;Views\SignUpWindowView.xaml;SplashScreenView.xaml;Style\MainStyle.xaml;Theme\LightTheme.xaml;
 
-True
+False
 

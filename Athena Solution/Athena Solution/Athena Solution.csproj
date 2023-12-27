@@ -112,38 +112,17 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="LoginWindowView.xaml.cs">
+    <Compile Include="Views\LoginWindowView.xaml.cs">
       <DependentUpon>LoginWindowView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Model\PageModel.cs" />
-    <Compile Include="SignUpWindowView.xaml.cs">
+    <Compile Include="Views\SignUpWindowView.xaml.cs">
       <DependentUpon>SignUpWindowView.xaml</DependentUpon>
     </Compile>
     <Compile Include="SplashScreenView.xaml.cs">
       <DependentUpon>SplashScreenView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Utilities\Btn.cs" />
-    <Compile Include="Utilities\RelayCommand.cs" />
-    <Compile Include="Utilities\ViewModelBase.cs" />
-    <Compile Include="ViewModel\CustomerVM.cs" />
-    <Compile Include="ViewModel\HomeVM.cs" />
-    <Compile Include="ViewModel\NavigationVM.cs" />
-    <Compile Include="ViewModel\OrderVM.cs" />
-    <Compile Include="ViewModel\ProductVM.cs" />
-    <Compile Include="ViewModel\SettingVM.cs" />
-    <Compile Include="ViewModel\ShipmentVM.cs" />
-    <Compile Include="ViewModel\TransactionVM.cs" />
-    <Compile Include="Views\Home.xaml.cs">
-      <DependentUpon>Home.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Orders.xaml.cs">
-      <DependentUpon>Orders.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Teachers.xaml.cs">
-      <DependentUpon>Teachers.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -192,32 +171,23 @@
       <DependentUpon>AthenaModel.edmx</DependentUpon>
       <LastGenOutput>AthenaModel.cs</LastGenOutput>
     </Content>
+    <Resource Include="Images\avatar-2.jpg" />
     <Resource Include="Images\logoSplash.ico" />
-    <Resource Include="Images\illustrationSplash.png" />
     <Resource Include="Images\logoSplash.png" />
-    <Resource Include="Images\customer_page.png" />
-    <Resource Include="Images\home_page.png" />
-    <Resource Include="Images\img_customer.png" />
     <Resource Include="Images\img_home.png" />
-    <Resource Include="Images\img_order.png" />
-    <Resource Include="Images\img_product.png" />
-    <Resource Include="Images\img_setting.png" />
-    <Resource Include="Images\img_shipment.png" />
-    <Resource Include="Images\img_transaction.png" />
     <Resource Include="Images\logo.png" />
-    <Resource Include="Images\order_page.png" />
-    <Resource Include="Images\product_page.png" />
-    <Resource Include="Images\setting_page.png" />
-    <Resource Include="Images\shipment_page.png" />
     <Resource Include="Images\shutdown_def.png" />
     <Resource Include="Images\shutdown_mo.png" />
-    <Resource Include="Images\transaction_page.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="LoginWindowView.xaml">
+    <Page Include="Images\Icons\Icons.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\LoginWindowView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -225,7 +195,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="SignUpWindowView.xaml">
+    <Page Include="Pages\HomePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\NotesPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\PaymentPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\SoundsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SignUpWindowView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -233,21 +219,13 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Utilities\DataTemplate.xaml">
+    <Page Include="Style\MainStyle.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\Home.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="Theme\LightTheme.xaml">
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Orders.xaml">
       <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Teachers.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
