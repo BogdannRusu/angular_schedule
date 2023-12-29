@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("datamodel/athenamodel.context.tt")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("datamodel/athenamodel.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("datamodel/athenamodule.context.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("datamodel/athenamodule.tt")]
 
 

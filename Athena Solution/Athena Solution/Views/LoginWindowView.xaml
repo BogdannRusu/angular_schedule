@@ -30,20 +30,17 @@
                 </materialDesign:PopupBox>
 
 
-                <Image Margin="0,60,0,5" Source="Images/logo.png" Height="100"></Image>
+                <Image Margin="0,60,0,5" Source="Images/logo.png" Height="100"/>
 
                 <TextBlock Margin="0,25,0,5" HorizontalAlignment="Center" FontSize="28" FontWeight="Bold" Text="Bine ati venit pe Athena!" />
 
-                <TextBlock FontSize="17" FontWeight="SemiBold" HorizontalAlignment="Center" Text="Conectați-vă la contul dvs. existent"></TextBlock>
+                <TextBlock FontSize="17" FontWeight="SemiBold" HorizontalAlignment="Center" Text="Conectați-vă la contul dvs. existent"/>
 
                 <TextBox Margin="0,50,0,0" Text="" x:Name="txtUsername" Width="300" FontSize="18" materialDesign:HintAssist.Hint="Introduceti login" BorderThickness="2" BorderBrush="{DynamicResource MaterialDesignDivider}"  Style="{StaticResource MaterialDesignOutlinedTextBox}" />
 
                 <PasswordBox Margin="0,20,0,0" x:Name="txtPassword" Width="300" FontSize="18" materialDesign:HintAssist.Hint="Introduceti parola" BorderThickness="2" BorderBrush="{DynamicResource MaterialDesignDivider}" Style="{StaticResource MaterialDesignOutlinedPasswordBox}"/>
 
-                <Button  Margin="0,20,0,0" x:Name="loginBtn" Style="{StaticResource MaterialDesignFlatMidBgButton}" materialDesign:ShadowAssist.ShadowDepth="Depth0" Height="53" Width="300" materialDesign:ButtonAssist.CornerRadius="10" FontSize="18" Content="LOG IN" Click="loginBtn_Click"></Button>
-
-                <Button Margin="0,20,0,0" x:Name="signupBtn" Style="{StaticResource MaterialDesignFlatButton}" materialDesign:ShadowAssist.ShadowDepth="Depth0" Height="53" Width="300" materialDesign:ButtonAssist.CornerRadius="10" FontSize="18" Content="Create Account" Click="signupBtn_Click" Visibility="Hidden"></Button>
-
+                <Button  Margin="0,20,0,0" x:Name="loginBtn" Style="{StaticResource MaterialDesignFlatMidBgButton}" materialDesign:ShadowAssist.ShadowDepth="Depth0" Height="53" Width="300" materialDesign:ButtonAssist.CornerRadius="10" FontSize="18" Content="LOG IN" Click="loginBtn_Click"/>
 
             </StackPanel>
         </materialDesign:DialogHost>

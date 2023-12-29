@@ -14,10 +14,19 @@ namespace Athena_Solution.DataModel
     
     public partial class users
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public users()
+        {
+            this.links = new HashSet<links>();
+        }
+    
         public int user_id { get; set; }
         public string name { get; set; }
         public string password { get; set; }
         public string email { get; set; }
         public short is_active { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<links> links { get; set; }
     }
 }

@@ -3,6 +3,7 @@ using MaterialDesignThemes.Wpf;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -21,7 +22,7 @@ namespace Athena_Solution
     /// </summary>
     public partial class LoginWindowView : Window
     {
-        AthenaModel context = new AthenaModel();
+        AthenaModule context = new AthenaModule();
         public LoginWindowView()
         {
             InitializeComponent();
@@ -56,43 +57,68 @@ namespace Athena_Solution
             paletteHelper.SetTheme(theme);
         }
 
-        public void Autentification()
+        private void loginBtn_Click(object sender, RoutedEventArgs e)
         {
-            using(var context = new AthenaModel())
+            if (txtUsername.Text == "1")
             {
-                if (context.users.Any())
+                Hide();
+                var signUp = new SignUpWindowView();
+                signUp.Show();
+            }
+            else
+            {
+                var username = txtUsername.Text.ToString();
+                var password = txtPassword.Password.ToString();
+
+                if (VerifyUser(username, password))
                 {
+                    ShowMainView();
                     Hide();
-                   var main = new MainWindow();
-                   main.ShowDialog();
                 }
+                else
+                {
+                    ShowErrorMessage("Datele introduse nu coincid");
+                }
+            }
+
+        }
+
+        //Verify user if exist in database
+        private void ShowMainView()
+        {
+            var mainView = new MainWindow();
+            mainView.Show();
+        }
+
+        private void ShowErrorMessage(string message)
+        {
+            MessageBox.Show(message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+        }
+
+        public bool VerifyUser(string enteredUserName, string enteredPassword)
+        {
+            var user = context.users.FirstOrDefault(u => u.name == enteredUserName);
+            if (user != null)
+            {
+                string hashedPassword = EncryptPassword(enteredPassword);
+                return user.password == hashedPassword;
+            }
+            
+                return false;
+        }
+
+        private string EncryptPassword(string pass)
+        {
+            using (var sha256 = SHA256.Create())
+            {
+                var hashedBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(pass));
+                return BitConverter.ToString(hashedBytes).Replace("-", "").ToLower();
             }
         }
 
         private void exitApp(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
-        }
-
-        private void loginBtn_Click(object sender, RoutedEventArgs e)
-        {
-             if (txtUsername.Text != "1")
-             {
-                Autentification();
-             }
-               else
-               {
-                    var sign = new SignUpWindowView();
-                    sign.ShowDialog();
-                    Hide();
-               }
-
-        }
-
-        private void signupBtn_Click(object sender, RoutedEventArgs e)
-        {
-          
-            
         }
     }
 }

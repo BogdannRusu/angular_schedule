@@ -30,6 +30,7 @@
           <Property Name="id_profesor" Type="int" Nullable="false" />
           <Property Name="id_grupa" Type="int" Nullable="false" />
           <Property Name="id_cabinet" Type="int" Nullable="false" />
+          <Property Name="user_id" Type="int" />
         </EntityType>
         <EntityType Name="profesori">
           <Key>
@@ -54,6 +55,18 @@
           <Property Name="email" Type="varchar" MaxLength="100" />
           <Property Name="is_active" Type="smallint" Nullable="false" />
         </EntityType>
+        <Association Name="FK__links__user_id__6E01572D">
+          <End Role="users" Type="Self.users" Multiplicity="0..1" />
+          <End Role="links" Type="Self.links" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="users">
+              <PropertyRef Name="user_id" />
+            </Principal>
+            <Dependent Role="links">
+              <PropertyRef Name="user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="links_ibfk_1">
           <End Role="profesori" Type="Self.profesori" Multiplicity="1" />
           <End Role="links" Type="Self.links" Multiplicity="*" />
@@ -96,6 +109,10 @@
           <EntitySet Name="links" EntityType="Self.links" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="profesori" EntityType="Self.profesori" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="users" EntityType="Self.users" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__links__user_id__6E01572D" Association="Self.FK__links__user_id__6E01572D">
+            <End Role="users" EntitySet="users" />
+            <End Role="links" EntitySet="links" />
+          </AssociationSet>
           <AssociationSet Name="links_ibfk_1" Association="Self.links_ibfk_1">
             <End Role="profesori" EntitySet="profesori" />
             <End Role="links" EntitySet="links" />
@@ -143,6 +160,8 @@
           <NavigationProperty Name="cabinete" Relationship="Self.links_ibfk_3" FromRole="links" ToRole="cabinete" />
           <NavigationProperty Name="grupe" Relationship="Self.links_ibfk_2" FromRole="links" ToRole="grupe" />
           <NavigationProperty Name="profesori" Relationship="Self.links_ibfk_1" FromRole="links" ToRole="profesori" />
+          <Property Name="user_id" Type="Int32" />
+          <NavigationProperty Name="users" Relationship="AthenaDbContext.FK__links__user_id__6E01572D" FromRole="links" ToRole="users" />
         </EntityType>
         <EntityType Name="profesori">
           <Key>
@@ -162,11 +181,12 @@
           <Key>
             <PropertyRef Name="user_id" />
           </Key>
-          <Property Name="user_id" Type="Int32" Nullable="false" />
+          <Property Name="user_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="password" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
           <Property Name="is_active" Type="Int16" Nullable="false" />
+          <NavigationProperty Name="links" Relationship="AthenaDbContext.FK__links__user_id__6E01572D" FromRole="users" ToRole="links" />
         </EntityType>
         <Association Name="links_ibfk_3">
           <End Role="cabinete" Type="Self.cabinete" Multiplicity="1" />
@@ -204,7 +224,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="AthenaModel" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="AthenaModule" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="cabinete" EntityType="Self.cabinete" />
           <EntitySet Name="grupe" EntityType="Self.grupe" />
           <EntitySet Name="links" EntityType="Self.links" />
@@ -222,13 +242,29 @@
             <End Role="profesori" EntitySet="profesori" />
             <End Role="links" EntitySet="links" />
           </AssociationSet>
+          <AssociationSet Name="FK__links__user_id__6E01572D" Association="AthenaDbContext.FK__links__user_id__6E01572D">
+            <End Role="users" EntitySet="users" />
+            <End Role="links" EntitySet="links" />
+          </AssociationSet>
         </EntityContainer>
+        <Association Name="FK__links__user_id__6E01572D">
+          <End Type="AthenaDbContext.users" Role="users" Multiplicity="0..1" />
+          <End Type="AthenaDbContext.links" Role="links" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="users">
+              <PropertyRef Name="user_id" />
+            </Principal>
+            <Dependent Role="links">
+              <PropertyRef Name="user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="AthenaDbContextStoreContainer" CdmEntityContainer="AthenaModel">
+        <EntityContainerMapping StorageEntityContainer="AthenaDbContextStoreContainer" CdmEntityContainer="AthenaModule">
           <EntitySetMapping Name="cabinete">
             <EntityTypeMapping TypeName="AthenaDbContext.cabinete">
               <MappingFragment StoreEntitySet="cabinete">
@@ -251,6 +287,7 @@
           <EntitySetMapping Name="links">
             <EntityTypeMapping TypeName="AthenaDbContext.links">
               <MappingFragment StoreEntitySet="links">
+                <ScalarProperty Name="user_id" ColumnName="user_id" />
                 <ScalarProperty Name="id_link" ColumnName="id_link" />
                 <ScalarProperty Name="id_profesor" ColumnName="id_profesor" />
                 <ScalarProperty Name="id_grupa" ColumnName="id_grupa" />

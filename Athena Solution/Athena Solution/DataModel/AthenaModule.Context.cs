@@ -13,10 +13,10 @@ namespace Athena_Solution.DataModel
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class AthenaModel : DbContext
+    public partial class AthenaModule : DbContext
     {
-        public AthenaModel()
-            : base("name=AthenaModel")
+        public AthenaModule()
+            : base("name=AthenaModule")
         {
         }
     

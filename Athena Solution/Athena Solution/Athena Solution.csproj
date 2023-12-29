@@ -78,40 +78,41 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="DataModel\AthenaModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AthenaModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataModel\AthenaModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AthenaModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataModel\AthenaModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AthenaModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="DataModel\cabinete.cs">
-      <DependentUpon>AthenaModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataModel\grupe.cs">
-      <DependentUpon>AthenaModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataModel\links.cs">
-      <DependentUpon>AthenaModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataModel\profesori.cs">
-      <DependentUpon>AthenaModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataModel\users.cs">
-      <DependentUpon>AthenaModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DataModel\AthenaModule.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AthenaModule.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\AthenaModule.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AthenaModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\AthenaModule.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AthenaModule.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\cabinete.cs">
+      <DependentUpon>AthenaModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\grupe.cs">
+      <DependentUpon>AthenaModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\links.cs">
+      <DependentUpon>AthenaModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\profesori.cs">
+      <DependentUpon>AthenaModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\users.cs">
+      <DependentUpon>AthenaModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\UsersDTO.cs" />
     <Compile Include="Views\LoginWindowView.xaml.cs">
       <DependentUpon>LoginWindowView.xaml</DependentUpon>
     </Compile>
@@ -143,12 +144,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="DataModel\AthenaModel.edmx">
+    <EntityDeploy Include="DataModel\AthenaModule.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>AthenaModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>AthenaModule.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="DataModel\AthenaModel.edmx.diagram">
-      <DependentUpon>AthenaModel.edmx</DependentUpon>
+    <None Include="DataModel\AthenaModule.edmx.diagram">
+      <DependentUpon>AthenaModule.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -159,18 +160,20 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Content Include="DataModel\AthenaModel.Context.tt">
+    <Content Include="DataModel\AthenaModule.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>AthenaModel.Context.cs</LastGenOutput>
-      <DependentUpon>AthenaModel.edmx</DependentUpon>
+      <DependentUpon>AthenaModule.edmx</DependentUpon>
+      <LastGenOutput>AthenaModule.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="DataModel\AthenaModel.tt">
+    <Content Include="DataModel\AthenaModule.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>AthenaModel.edmx</DependentUpon>
-      <LastGenOutput>AthenaModel.cs</LastGenOutput>
+      <DependentUpon>AthenaModule.edmx</DependentUpon>
+      <LastGenOutput>AthenaModule.cs</LastGenOutput>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\illustrationSplash.png" />
     <Resource Include="Images\avatar-2.jpg" />
     <Resource Include="Images\logoSplash.ico" />
     <Resource Include="Images\logoSplash.png" />

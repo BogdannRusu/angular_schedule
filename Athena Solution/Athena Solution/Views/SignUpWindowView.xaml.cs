@@ -22,7 +22,7 @@ namespace Athena_Solution
     /// </summary>
     public partial class SignUpWindowView : Window
     {
-        AthenaModel cotext = new AthenaModel();
+        AthenaModule cotext = new AthenaModule();
         public SignUpWindowView()
         {
             InitializeComponent();
@@ -66,13 +66,12 @@ namespace Athena_Solution
         {
             var username = txtUsername.Text;
             var password = txtPassword;
-            var rePass   = txtrePassword;
-            using(var context = new AthenaModel())
+            using(var context = new AthenaModule())
             {
                 var newUser = new users
                 {
-                    name = txtUsername.Text,
-                    password = EncryptPassword(Convert.ToString(txtPassword)),
+                    name = username,
+                    password = EncryptPassword(password.Password.ToString()),
                     email = "test@gmail.com",
                     is_active = 1
                 };
