@@ -66,15 +66,38 @@ namespace Athena_Solution
         {
             var username = txtUsername.Text;
             var password = txtPassword;
-            using(var context = new AthenaModule())
+            var rePass = txtrePassword;
+
+            if(string.IsNullOrEmpty(username)) 
             {
-                var newUser = new users
+                MessageBox.Show("Nu ati introdus numele de utilizator!!!","Eroare",MessageBoxButton.OK,MessageBoxImage.Error); 
+            }
+            else if (string.IsNullOrEmpty(password.Password))
+            {
+                MessageBox.Show("Nu ati introdus parola!!!", "Eroare", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            else if(password.Password != rePass.Password)
+            {
+                MessageBox.Show("Parolele nu coincid!!!", "Eroare", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+
+            else if(username == "1")
+            {
+                Hide();
+                var backLogin = new LoginWindowView();
+                backLogin.ShowDialog();
+            }
+            else
+            {
+                using (var context = new AthenaModule())
                 {
-                    name = username,
-                    password = EncryptPassword(password.Password.ToString()),
-                    email = "test@gmail.com",
-                    is_active = 1
-                };
+                    var newUser = new users
+                    {
+                        name = username,
+                        password = EncryptPassword(password.Password.ToString()),
+                        email = "test@gmail.com",
+                        is_active = 1
+                    };
 
                     context.users.Add(newUser);
                     context.SaveChanges();
@@ -83,10 +106,9 @@ namespace Athena_Solution
                     Hide();
                     var login = new LoginWindowView();
                     login.ShowDialog();
-                   
-                
-                
+                }
             }
+
         }
 
         public static string EncryptPassword(string pass)

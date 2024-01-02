@@ -112,7 +112,17 @@
     <Compile Include="DataModel\users.cs">
       <DependentUpon>AthenaModule.tt</DependentUpon>
     </Compile>
+    <Compile Include="DTO\TeachersDTO.cs" />
     <Compile Include="DTO\UsersDTO.cs" />
+    <Compile Include="Pages\Cabinet.xaml.cs">
+      <DependentUpon>Cabinet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Teachers.xaml.cs">
+      <DependentUpon>Teachers.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\LoginWindowView.xaml.cs">
       <DependentUpon>LoginWindowView.xaml</DependentUpon>
     </Compile>
@@ -171,6 +181,7 @@
       <DependentUpon>AthenaModule.edmx</DependentUpon>
       <LastGenOutput>AthenaModule.cs</LastGenOutput>
     </Content>
+    <Resource Include="Images\ulim.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\illustrationSplash.png" />
@@ -190,6 +201,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Pages\Cabinet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Teachers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\LoginWindowView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -197,22 +220,6 @@
     <Page Include="MainWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\HomePage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Pages\NotesPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Pages\PaymentPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Pages\SoundsPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\SignUpWindowView.xaml">
       <SubType>Designer</SubType>

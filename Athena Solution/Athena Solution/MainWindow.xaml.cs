@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Athena_Solution.Pages;
+using MaterialDesignThemes.Wpf;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,7 +28,7 @@ namespace Athena_Solution
 
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
-            Close();
+            Application.Current.Shutdown();
         }
 
         private void btnRestore_Click(object sender, RoutedEventArgs e)
@@ -44,24 +46,28 @@ namespace Athena_Solution
 
         private void rdHome_Click(object sender, RoutedEventArgs e)
         {
-            // PagesNavigation.Navigate(new HomePage());
-
-            PagesNavigation.Navigate(new System.Uri("Pages/HomePage.xaml", UriKind.RelativeOrAbsolute));
+            Home hm = new Home();
+            MainPanel.Children.Add(hm);
         }
 
         private void rdSounds_Click(object sender, RoutedEventArgs e)
         {
-            PagesNavigation.Navigate(new System.Uri("Pages/SoundsPage.xaml", UriKind.RelativeOrAbsolute));
+         
         }
 
         private void rdNotes_Click(object sender, RoutedEventArgs e)
         {
-            PagesNavigation.Navigate(new System.Uri("Pages/NotesPage.xaml", UriKind.RelativeOrAbsolute));
+            //PagesNavigation.Navigate(new System.Uri("Pages/NotesPage.xaml", UriKind.RelativeOrAbsolute));
         }
 
         private void rdPayment_Click(object sender, RoutedEventArgs e)
         {
-            PagesNavigation.Navigate(new System.Uri("Pages/PaymentPage.xaml", UriKind.RelativeOrAbsolute));
+            //PagesNavigation.Navigate(new System.Uri("Pages/PaymentPage.xaml", UriKind.RelativeOrAbsolute));
+        }
+
+        private void rdHome_Checked(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
