@@ -34,13 +34,21 @@ namespace Athena_Solution.Pages
 
         private void del_teachers_Click(object sender, RoutedEventArgs e)
         {
-            //DeleteTeachers(txtDelId);
+            var delProf = txtDelProf.Text;
+            if (int.TryParse(delProf, out int teacherIdToDelete))
+            {
+                DeleteTeachers(teacherIdToDelete);
+            }
+            else
+            {
+                MessageBox.Show("Invalid Teacher ID format. Please enter a valid integer.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
         public void DeleteTeachers(int IdProf)
         {
             var deleteProf = context.profesori.FirstOrDefault(t => t.id_prof == IdProf);
-            var adminUser = context.users.FirstOrDefault(t => t.user_id == 1);
+            var adminUser = context.users.FirstOrDefault(t => t.user_id == 1002);
 
             if (adminUser != null)
             {

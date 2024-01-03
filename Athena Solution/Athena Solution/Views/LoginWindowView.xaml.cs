@@ -70,6 +70,7 @@ namespace Athena_Solution
                 var username = txtUsername.Text.ToString();
                 var password = txtPassword.Password.ToString();
 
+
                 if (VerifyUser(username, password))
                 {
                     ShowMainView();

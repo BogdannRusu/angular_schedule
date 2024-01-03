@@ -62,5 +62,11 @@ namespace Athena_Solution
             Cabinet cabinet = new Cabinet();
             MainPanel.Content = cabinet;
         }
+
+        private void rdGroups_Checked(object sender, RoutedEventArgs e)
+        {
+            Groups group = new Groups();
+            MainPanel.Content = group;
+        }
     }
 }

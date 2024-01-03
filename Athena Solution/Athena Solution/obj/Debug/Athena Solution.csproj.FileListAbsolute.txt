@@ -86,3 +86,5 @@ D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Athena Solution.csproj.CopyComplete
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Athena Solution.exe
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Athena Solution.pdb
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Pages\Groups.g.cs
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Pages\Groups.baml

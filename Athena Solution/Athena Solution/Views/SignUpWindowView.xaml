@@ -29,7 +29,7 @@
                     </StackPanel>
                 </materialDesign:PopupBox>
 
-                <Image Margin="0,60,0,5" Source="Images/logo.png" Height="100"></Image>
+                <Image Margin="0,60,0,5" Source="/Images/logo.png" Height="100"></Image>
 
                 <TextBlock Margin="0,25,0,5" HorizontalAlignment="Center" FontSize="28" FontWeight="Bold" Text="Bine ati revenit!" />
 
