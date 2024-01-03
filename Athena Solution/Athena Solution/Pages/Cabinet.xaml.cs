@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Athena_Solution.DataModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,11 +19,14 @@ namespace Athena_Solution.Pages
     /// <summary>
     /// Interaction logic for Cabinet.xaml
     /// </summary>
-    public partial class Cabinet : Page
+    public partial class Cabinet : UserControl
     {
+        private AthenaModule context;
         public Cabinet()
         {
             InitializeComponent();
+            context = new AthenaModule();
+            dataGridCabinet.ItemsSource = context.cabinete.ToList();
         }
     }
 }

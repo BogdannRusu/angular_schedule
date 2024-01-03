@@ -24,18 +24,34 @@ namespace Athena_Solution.Pages
     /// </summary>
     public partial class Teachers : UserControl
     {
-        public ObservableCollection<Teachers> Teacher { get; set; }
+        private AthenaModule context;
         public Teachers()
         {
             InitializeComponent();
+            context = new AthenaModule();
+            DataTeachers.ItemsSource = context.profesori.ToList();
         }
 
-        private void btn_teachers_Click(object sender, RoutedEventArgs e)
+        private void del_teachers_Click(object sender, RoutedEventArgs e)
         {
-            using(var context = new AthenaModule())
+            //DeleteTeachers(txtDelId);
+        }
+
+        public void DeleteTeachers(int IdProf)
+        {
+            var deleteProf = context.profesori.FirstOrDefault(t => t.id_prof == IdProf);
+            var adminUser = context.users.FirstOrDefault(t => t.user_id == 1);
+
+            if (adminUser != null)
             {
-                
+                if(deleteProf != null)
+                {
+                    context.profesori.Remove(deleteProf);
+                    context.SaveChanges();
+                }
+                else { MessageBox.Show("Profesorul cu ID dat nu a fost gasit!!", "Error", MessageBoxButton.OK, MessageBoxImage.Exclamation); }
             }
+            else { MessageBox.Show("Nu aveti drepturi de administrator","Eroare",MessageBoxButton.OK,MessageBoxImage.Error); }
         }
     }
 }

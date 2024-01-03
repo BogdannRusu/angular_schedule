@@ -181,6 +181,7 @@
       <DependentUpon>AthenaModule.edmx</DependentUpon>
       <LastGenOutput>AthenaModule.cs</LastGenOutput>
     </Content>
+    <Resource Include="Images\user.png" />
     <Resource Include="Images\ulim.png" />
   </ItemGroup>
   <ItemGroup>

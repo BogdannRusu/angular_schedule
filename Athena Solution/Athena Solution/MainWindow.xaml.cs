@@ -44,30 +44,23 @@ namespace Athena_Solution
             WindowState = WindowState.Minimized;
         }
 
-        private void rdHome_Click(object sender, RoutedEventArgs e)
-        {
-            Home hm = new Home();
-            MainPanel.Children.Add(hm);
-        }
-
-        private void rdSounds_Click(object sender, RoutedEventArgs e)
-        {
-         
-        }
-
-        private void rdNotes_Click(object sender, RoutedEventArgs e)
-        {
-            //PagesNavigation.Navigate(new System.Uri("Pages/NotesPage.xaml", UriKind.RelativeOrAbsolute));
-        }
-
-        private void rdPayment_Click(object sender, RoutedEventArgs e)
-        {
-            //PagesNavigation.Navigate(new System.Uri("Pages/PaymentPage.xaml", UriKind.RelativeOrAbsolute));
-        }
-
         private void rdHome_Checked(object sender, RoutedEventArgs e)
-        {
+        {            
+            Home hm = new Home();
+            MainPanel.Content = hm;
+            
+        }
 
+        private void rdTeachers_Checked(object sender, RoutedEventArgs e)
+        {
+            Teachers prof = new Teachers();
+            MainPanel.Content = prof;
+        }
+
+        private void rdCabinets_Checked(object sender, RoutedEventArgs e)
+        {
+            Cabinet cabinet = new Cabinet();
+            MainPanel.Content = cabinet;
         }
     }
 }

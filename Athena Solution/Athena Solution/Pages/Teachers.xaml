@@ -5,14 +5,16 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Athena_Solution.Pages"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="650" d:DesignWidth="1000"
+             Background="White">
     <Grid>
-        <ListBox>
+        <ListBox Margin="0,0,0,139">
             <Border BorderBrush="White" BorderThickness="1" Height="428" Width="782"/>
         </ListBox>
-        <DataGrid x:Name="DataTeachers">
+        <DataGrid x:Name="DataTeachers" Margin="0,0,0,193">
         </DataGrid>
-        <Button x:Name="del_teachers" Content="Stergeti profesor" HorizontalAlignment="Left" Margin="488,393,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btn_teachers" Content="Afiseaza Profesorii" HorizontalAlignment="Left" Margin="214, 393,0,0" VerticalAlignment="Top" Click="btn_teachers_Click"/>
+        <Button x:Name="del_teachers" Content="Stergeti profesor" Margin="697,592,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Click="del_teachers_Click"/>
+        <Label x:Name="labelTitle" Content="Introduceti datele pentru stergere" HorizontalAlignment="Left" Margin="64,516,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox x:Name="txtDelId" HorizontalAlignment="Left" Margin="82,576,0,0" TextWrapping="Wrap" Text="ID Profesor" VerticalAlignment="Top" Width="120" FontSize="14"/>
     </Grid>
 </UserControl>
