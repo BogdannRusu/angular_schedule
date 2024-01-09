@@ -82,35 +82,35 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DataModel\AthenaModule.Context.cs">
+    <Compile Include="DataModel\AthenaModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>AthenaModule.Context.tt</DependentUpon>
+      <DependentUpon>AthenaModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="DataModel\AthenaModule.cs">
+    <Compile Include="DataModel\AthenaModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>AthenaModule.tt</DependentUpon>
+      <DependentUpon>AthenaModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="DataModel\AthenaModule.Designer.cs">
+    <Compile Include="DataModel\AthenaModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>AthenaModule.edmx</DependentUpon>
+      <DependentUpon>AthenaModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="DataModel\cabinete.cs">
-      <DependentUpon>AthenaModule.tt</DependentUpon>
+      <DependentUpon>AthenaModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataModel\grupe.cs">
-      <DependentUpon>AthenaModule.tt</DependentUpon>
+      <DependentUpon>AthenaModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataModel\links.cs">
-      <DependentUpon>AthenaModule.tt</DependentUpon>
+      <DependentUpon>AthenaModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataModel\profesori.cs">
-      <DependentUpon>AthenaModule.tt</DependentUpon>
+      <DependentUpon>AthenaModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataModel\users.cs">
-      <DependentUpon>AthenaModule.tt</DependentUpon>
+      <DependentUpon>AthenaModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DTO\TeachersDTO.cs" />
     <Compile Include="DTO\UsersDTO.cs" />
@@ -125,6 +125,9 @@
     </Compile>
     <Compile Include="Pages\Teachers.xaml.cs">
       <DependentUpon>Teachers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\InsertTeachers.xaml.cs">
+      <DependentUpon>InsertTeachers.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\LoginWindowView.xaml.cs">
       <DependentUpon>LoginWindowView.xaml</DependentUpon>
@@ -157,12 +160,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="DataModel\AthenaModule.edmx">
+    <EntityDeploy Include="DataModel\AthenaModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>AthenaModule.Designer.cs</LastGenOutput>
+      <LastGenOutput>AthenaModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="DataModel\AthenaModule.edmx.diagram">
-      <DependentUpon>AthenaModule.edmx</DependentUpon>
+    <None Include="DataModel\AthenaModel.edmx.diagram">
+      <DependentUpon>AthenaModel.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -174,16 +177,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DataModel\AthenaModule.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>AthenaModule.edmx</DependentUpon>
-      <LastGenOutput>AthenaModule.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="DataModel\AthenaModule.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>AthenaModule.edmx</DependentUpon>
-      <LastGenOutput>AthenaModule.cs</LastGenOutput>
-    </Content>
     <Resource Include="Images\loading.gif" />
     <Resource Include="Images\user.png" />
     <Resource Include="Images\ulim.png" />
@@ -222,6 +215,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\InsertTeachers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\LoginWindowView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -246,6 +243,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="DataModel\AthenaModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AthenaModel.edmx</DependentUpon>
+      <LastGenOutput>AthenaModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DataModel\AthenaModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AthenaModel.edmx</DependentUpon>
+      <LastGenOutput>AthenaModel.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MaterialDesignThemes.4.0.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.4.0.0\build\MaterialDesignThemes.targets')" />

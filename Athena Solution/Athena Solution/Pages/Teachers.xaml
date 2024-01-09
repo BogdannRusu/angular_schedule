@@ -16,5 +16,6 @@
         <Button x:Name="del_teachers" Content="Stergeti profesor" Margin="697,592,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Click="del_teachers_Click"/>
         <Label x:Name="labelTitle" Content="Introduceti datele pentru stergere" HorizontalAlignment="Left" Margin="64,516,0,0" VerticalAlignment="Top" FontSize="18"/>
         <TextBox Text="" x:Name="txtDelProf" FontSize="18" materialDesign:HintAssist.Hint="Introduceti ID" BorderThickness="2" BorderBrush="{DynamicResource MaterialDesignDivider}"  Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="64,553,659,41" />
+        <Button x:Name="add_teachers" Content="Adaugati profesor" Margin="548,615,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="add_teachers_Click"/>
     </Grid>
 </UserControl>

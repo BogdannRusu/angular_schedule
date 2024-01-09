@@ -23,7 +23,6 @@
     <EntitySetMapping Name="links">
       <EntityTypeMapping TypeName="AthenaDbContext.links">
         <MappingFragment StoreEntitySet="links">
-          <ScalarProperty Name="user_id" ColumnName="user_id" />
           <ScalarProperty Name="id_link" ColumnName="id_link" />
           <ScalarProperty Name="id_profesor" ColumnName="id_profesor" />
           <ScalarProperty Name="id_grupa" ColumnName="id_grupa" />
@@ -34,6 +33,7 @@
     <EntitySetMapping Name="profesori">
       <EntityTypeMapping TypeName="AthenaDbContext.profesori">
         <MappingFragment StoreEntitySet="profesori">
+          <ScalarProperty Name="functia" ColumnName="functia" />
           <ScalarProperty Name="id_prof" ColumnName="id_prof" />
           <ScalarProperty Name="nume" ColumnName="nume" />
           <ScalarProperty Name="prenume" ColumnName="prenume" />
@@ -41,7 +41,6 @@
           <ScalarProperty Name="data_activarii" ColumnName="data_activarii" />
           <ScalarProperty Name="end_data_activarii" ColumnName="end_data_activarii" />
           <ScalarProperty Name="is_active" ColumnName="is_active" />
-          <ScalarProperty Name="profesie" ColumnName="profesie" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

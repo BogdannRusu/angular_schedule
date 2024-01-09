@@ -22,7 +22,7 @@ namespace Athena_Solution
     /// </summary>
     public partial class LoginWindowView : Window
     {
-        AthenaModule context = new AthenaModule();
+        AthenaModel context = new AthenaModel();
         public LoginWindowView()
         {
             InitializeComponent();

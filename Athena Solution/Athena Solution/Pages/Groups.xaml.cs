@@ -21,11 +21,11 @@ namespace Athena_Solution.Pages
     /// </summary>
     public partial class Groups : UserControl
     {
-        private AthenaModule context;
+        private AthenaModel context;
         public Groups()
         {
             InitializeComponent();
-            context = new AthenaModule();
+            context = new AthenaModel();
             dataGridGroups.ItemsSource = context.grupe.ToList();
         }
     }

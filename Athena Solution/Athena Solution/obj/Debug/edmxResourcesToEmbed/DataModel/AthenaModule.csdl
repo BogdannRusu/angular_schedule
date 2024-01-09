@@ -46,6 +46,7 @@
     <Property Name="is_active" Type="Byte" Nullable="false" />
     <Property Name="profesie" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="links" Relationship="Self.links_ibfk_1" FromRole="profesori" ToRole="links" />
+    <Property Name="functia" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="users">
     <Key>

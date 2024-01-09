@@ -21,11 +21,11 @@ namespace Athena_Solution.Pages
     /// </summary>
     public partial class Cabinet : UserControl
     {
-        private AthenaModule context;
+        private AthenaModel context;
         public Cabinet()
         {
             InitializeComponent();
-            context = new AthenaModule();
+            context = new AthenaModel();
             dataGridCabinet.ItemsSource = context.cabinete.ToList();
         }
     }

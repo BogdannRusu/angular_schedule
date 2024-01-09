@@ -22,7 +22,7 @@ namespace Athena_Solution
     /// </summary>
     public partial class SignUpWindowView : Window
     {
-        AthenaModule cotext = new AthenaModule();
+        AthenaModel cotext = new AthenaModel();
         public SignUpWindowView()
         {
             InitializeComponent();
@@ -89,7 +89,7 @@ namespace Athena_Solution
             }
             else
             {
-                using (var context = new AthenaModule())
+                using (var context = new AthenaModel())
                 {
                     var newUser = new users
                     {

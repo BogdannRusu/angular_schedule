@@ -1,0 +1,23 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Athena_Solution.Views"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    x:Class="Athena_Solution.Views.InsertTeachers"
+        mc:Ignorable="d"
+        Title="Adaugare profesori" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <DatePicker x:Name="datePickerEndActiv" HorizontalAlignment="Left" Margin="424,222,0,0" VerticalAlignment="Top" Width="276" Text="Data Concedierii"/>
+        <Image x:Name="image1" HorizontalAlignment="Left" Height="47" Margin="10,10,0,0" VerticalAlignment="Top" Width="54" Source="/Images/logoSplash.png"/>
+        <Button x:Name="addProf1" Content="Adauga" HorizontalAlignment="Left" Margin="550,333,0,0" VerticalAlignment="Top" Width="127" Click="addProf1_Click"/>
+        <TextBox x:Name="txtLastName" HorizontalAlignment="Left" Margin="220,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" FontSize="18" Text="Prenume" Background="White" BorderBrush="#89656565"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="34,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" FontSize="18" RenderTransformOrigin="0.513,0.566" Text="Nume"/>
+        <TextBox x:Name="txtPatronimic" HorizontalAlignment="Left" Margin="400,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162" FontSize="18" RenderTransformOrigin="0.513,0.566" Text="Patronimic"/>
+        <DatePicker x:Name="datePickerStartDate" HorizontalAlignment="Left" Margin="614,130,0,0" VerticalAlignment="Top" Width="172" Text="Data activarii"/>
+        <TextBox x:Name="txtProfesie" HorizontalAlignment="Left" Margin="123,214,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" FontSize="18" RenderTransformOrigin="0.513,0.566" Text="Profesie"/>
+
+    </Grid>
+</Window>

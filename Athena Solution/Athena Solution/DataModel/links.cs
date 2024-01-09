@@ -18,11 +18,8 @@ namespace Athena_Solution.DataModel
         public int id_profesor { get; set; }
         public int id_grupa { get; set; }
         public int id_cabinet { get; set; }
-        public Nullable<int> user_id { get; set; }
     
         public virtual cabinete cabinete { get; set; }
         public virtual grupe grupe { get; set; }
-        public virtual profesori profesori { get; set; }
-        public virtual users users { get; set; }
     }
 }
