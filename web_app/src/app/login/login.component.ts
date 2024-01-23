@@ -8,12 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
-  user = {
-    email: '',
-    password: ''
-};
-
-onSubmit() {
-  console.log(this.user);
-}
+  login() {
+    // Handle login logic here
+    console.log('Login clicked');
+  }
 }
