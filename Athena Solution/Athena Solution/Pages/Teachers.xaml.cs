@@ -45,8 +45,8 @@ namespace Athena_Solution.Pages
                 MessageBox.Show("ID Profesor inexistent. Va rugam sa introduceti ID corect", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
 
-            MessageBox.Show("A fost sters profesorul cu succes","Succes",MessageBoxButton.OK, MessageBoxImage.Information);
-           
+            MessageBox.Show("A fost sters profesorul cu succes", "Succes", MessageBoxButton.OK, MessageBoxImage.Information);
+
         }
 
         public void DeleteTeachers(int IdProf)
@@ -56,20 +56,32 @@ namespace Athena_Solution.Pages
 
             if (adminUser != null)
             {
-                if(deleteProf != null)
+                if (deleteProf != null)
                 {
                     context.profesori.Remove(deleteProf);
                     context.SaveChanges();
                 }
                 else { MessageBox.Show("Profesorul cu ID dat nu a fost gasit!!", "Eroare", MessageBoxButton.OK, MessageBoxImage.Exclamation); }
             }
-            else { MessageBox.Show("Nu aveti drepturi de administrator","Eroare",MessageBoxButton.OK,MessageBoxImage.Error); }
+            else { MessageBox.Show("Nu aveti drepturi de administrator", "Eroare", MessageBoxButton.OK, MessageBoxImage.Error); }
+        }
+
+        public void UpdateTeachers()
+        {
+            context = new AthenaModel();
+            DataTeachers.ItemsSource = context.profesori.ToList();
+
         }
 
         private void add_teachers_Click(object sender, RoutedEventArgs e)
         {
             var insertTeacher = new InsertTeachers();
             insertTeacher.ShowDialog();
+        }
+
+        private void update_Teacher_Click(object sender, RoutedEventArgs e)
+        {
+            UpdateTeachers();
         }
     }
 }

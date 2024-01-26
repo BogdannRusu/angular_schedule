@@ -9,15 +9,22 @@
         mc:Ignorable="d"
         Title="Adaugare profesori" Height="450" Width="800"
         WindowStartupLocation="CenterScreen">
+
     <Grid>
-        <DatePicker x:Name="datePickerEndActiv" HorizontalAlignment="Left" Margin="424,222,0,0" VerticalAlignment="Top" Width="276" Text="Data Concedierii"/>
-        <Image x:Name="image1" HorizontalAlignment="Left" Height="47" Margin="10,10,0,0" VerticalAlignment="Top" Width="54" Source="/Images/logoSplash.png"/>
-        <Button x:Name="addProf1" Content="Adauga" HorizontalAlignment="Left" Margin="550,333,0,0" VerticalAlignment="Top" Width="127" Click="addProf1_Click"/>
-        <TextBox x:Name="txtLastName" HorizontalAlignment="Left" Margin="220,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" FontSize="18" Text="Prenume" Background="White" BorderBrush="#89656565"/>
-        <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="34,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" FontSize="18" RenderTransformOrigin="0.513,0.566" Text="Nume"/>
-        <TextBox x:Name="txtPatronimic" HorizontalAlignment="Left" Margin="400,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162" FontSize="18" RenderTransformOrigin="0.513,0.566" Text="Patronimic"/>
-        <DatePicker x:Name="datePickerStartDate" HorizontalAlignment="Left" Margin="614,130,0,0" VerticalAlignment="Top" Width="172" Text="Data activarii"/>
-        <TextBox x:Name="txtProfesie" HorizontalAlignment="Left" Margin="123,214,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" FontSize="18" RenderTransformOrigin="0.513,0.566" Text="Profesie"/>
+        <DatePicker x:Name="datePickerEndActiv" HorizontalAlignment="Left" Margin="503,222,0,0" VerticalAlignment="Top" Width="197" Text="Data Concedierii"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="47" Margin="10,10,0,0" VerticalAlignment="Top" Width="54" Source="/Images/logoSplash.png"/>
+        <Button x:Name="addProf" Content="Adauga" HorizontalAlignment="Left" Margin="550,333,0,0" VerticalAlignment="Top" Width="127" Click="addProf1_Click"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="34,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" FontSize="18" RenderTransformOrigin="0.513,0.566"/>
+        <TextBox x:Name="txtLastName" HorizontalAlignment="Left" Margin="238,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162" FontSize="18" RenderTransformOrigin="0.513,0.566"/>
+        <DatePicker x:Name="datePickerStartDate" HorizontalAlignment="Left" Margin="648,134,0,0" VerticalAlignment="Top" Width="137" Text="Data activarii"/>
+        <TextBox x:Name="txtProfesie" HorizontalAlignment="Left" Margin="123,214,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" FontSize="18" RenderTransformOrigin="0.513,0.566"/>
+        <Label x:Name="labelName" Content="Nume" HorizontalAlignment="Left" Margin="72,77,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Width="78"/>
+        <Label x:Name="labelLastName" Content="Preume" HorizontalAlignment="Left" Margin="272,77,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Width="94"/>
+        <Label x:Name="labelProfesie" Content="Profesie" HorizontalAlignment="Left" Margin="167,177,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Width="84"/>
+        <TextBox x:Name="txtPatronimic" HorizontalAlignment="Left" Margin="435,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162" FontSize="18" RenderTransformOrigin="0.513,0.566"/>
+        <Label x:Name="labelSurname" Content="Patronimic" HorizontalAlignment="Left" Margin="456,77,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Width="122"/>
+        <Label x:Name="label_StartDate" Content="Data Angajarii" HorizontalAlignment="Left" Margin="649,77,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Width="136"/>
+        <Label x:Name="labelEndDate" Content="Data Concediere(Optional" HorizontalAlignment="Left" Margin="498,177,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Width="230"/>
 
     </Grid>
 </Window>

@@ -59,8 +59,8 @@
                     <StackPanel Grid.Row="3">
                         <RadioButton x:Name="rdHome" Content="Acasa" Style="{DynamicResource MenuRadioButtonStyle}" Tag="{DynamicResource home}" Checked="rdHome_Checked"/>
                         <RadioButton x:Name="rdTeachers" Content="Profesori" Style="{DynamicResource MenuRadioButtonStyle}" Tag="{DynamicResource notes}" Checked="rdTeachers_Checked"></RadioButton>
-                        <RadioButton x:Name="rdCabinets" Content="Cabinete" Style="{DynamicResource MenuRadioButtonStyle}" Tag="{DynamicResource headphones}" Margin="0 5 0 5" Checked="rdCabinets_Checked"/>
-                        <RadioButton x:Name="rdGroups" Content="Grupe" Style="{DynamicResource MenuRadioButtonStyle}" Tag="{DynamicResource logo}" Checked="rdGroups_Checked"/>
+                        <RadioButton x:Name="rdCabinets" Content="Cabinete" Style="{DynamicResource MenuRadioButtonStyle}" Tag="{DynamicResource notes}" Margin="0 5 0 5" Checked="rdCabinets_Checked"/>
+                        <RadioButton x:Name="rdGroups" Content="Grupe" Style="{DynamicResource MenuRadioButtonStyle}" Tag="{DynamicResource notes}" Checked="rdGroups_Checked"/>
                       </StackPanel>
 
                     <StackPanel Grid.Row="3" VerticalAlignment="Bottom" Orientation="Horizontal" Width="200" Margin="0 0 0 20">
