@@ -112,6 +112,7 @@ D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Pages\Groups.g.cs
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Pages\Home.g.cs
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Pages\Teachers.g.cs
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Views\InsertGroup.g.cs
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Views\InsertTeachers.g.cs
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Views\LoginWindowView.g.cs
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\MainWindow.g.cs
@@ -125,6 +126,7 @@ D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Pages\Groups.baml
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Pages\Home.baml
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Pages\Teachers.baml
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Views\InsertGroup.baml
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Views\InsertTeachers.baml
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Views\LoginWindowView.baml
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\MainWindow.baml

@@ -10,26 +10,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="grupe">
-      <EntityTypeMapping TypeName="AthenaModule.grupe">
-        <MappingFragment StoreEntitySet="grupe">
-          <ScalarProperty Name="id_grupa" ColumnName="id_grupa" />
-          <ScalarProperty Name="nume_grupa" ColumnName="nume_grupa" />
-          <ScalarProperty Name="is_active" ColumnName="is_active" />
-          <ScalarProperty Name="anul" ColumnName="anul" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="links">
-      <EntityTypeMapping TypeName="AthenaModule.links">
-        <MappingFragment StoreEntitySet="links">
-          <ScalarProperty Name="id_link" ColumnName="id_link" />
-          <ScalarProperty Name="id_profesor" ColumnName="id_profesor" />
-          <ScalarProperty Name="id_grupa" ColumnName="id_grupa" />
-          <ScalarProperty Name="id_cabinet" ColumnName="id_cabinet" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="profesori">
       <EntityTypeMapping TypeName="AthenaModule.profesori">
         <MappingFragment StoreEntitySet="profesori">
@@ -52,6 +32,27 @@
           <ScalarProperty Name="password" ColumnName="password" />
           <ScalarProperty Name="email" ColumnName="email" />
           <ScalarProperty Name="is_active" ColumnName="is_active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="grupe">
+      <EntityTypeMapping TypeName="AthenaModule.grupe">
+        <MappingFragment StoreEntitySet="grupe">
+          <ScalarProperty Name="id_link" ColumnName="id_link" />
+          <ScalarProperty Name="anul" ColumnName="anul" />
+          <ScalarProperty Name="is_active" ColumnName="is_active" />
+          <ScalarProperty Name="nume_grupa" ColumnName="nume_grupa" />
+          <ScalarProperty Name="id_grupa" ColumnName="id_grupa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="linksSet">
+      <EntityTypeMapping TypeName="AthenaModule.links">
+        <MappingFragment StoreEntitySet="links">
+          <ScalarProperty Name="id_cabinet" ColumnName="id_cabinet" />
+          <ScalarProperty Name="id_grupa" ColumnName="id_grupa" />
+          <ScalarProperty Name="id_profesor" ColumnName="id_profesor" />
+          <ScalarProperty Name="id_link" ColumnName="id_link" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

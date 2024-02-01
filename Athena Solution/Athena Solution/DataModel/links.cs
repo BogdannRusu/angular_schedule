@@ -21,5 +21,6 @@ namespace Athena_Solution.DataModel
     
         public virtual cabinete cabinete { get; set; }
         public virtual grupe grupe { get; set; }
+        public virtual profesori profesori { get; set; }
     }
 }

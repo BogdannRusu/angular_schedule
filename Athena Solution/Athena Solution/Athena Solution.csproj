@@ -126,6 +126,9 @@
     <Compile Include="Pages\Teachers.xaml.cs">
       <DependentUpon>Teachers.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\InsertGroup.xaml.cs">
+      <DependentUpon>InsertGroup.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\InsertTeachers.xaml.cs">
       <DependentUpon>InsertTeachers.xaml</DependentUpon>
     </Compile>
@@ -214,6 +217,10 @@
     <Page Include="Pages\Teachers.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\InsertGroup.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\InsertTeachers.xaml">
       <SubType>Designer</SubType>

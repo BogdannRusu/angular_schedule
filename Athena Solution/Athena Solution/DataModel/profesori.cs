@@ -14,6 +14,12 @@ namespace Athena_Solution.DataModel
     
     public partial class profesori
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public profesori()
+        {
+            this.links = new HashSet<links>();
+        }
+    
         public int id_prof { get; set; }
         public string nume { get; set; }
         public string prenume { get; set; }
@@ -22,5 +28,8 @@ namespace Athena_Solution.DataModel
         public Nullable<System.DateTime> end_data_activarii { get; set; }
         public short is_active { get; set; }
         public string functia { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<links> links { get; set; }
     }
 }
