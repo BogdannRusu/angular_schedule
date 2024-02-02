@@ -40,6 +40,9 @@
     <ApplicationIcon>Images\logoSplash.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.2.1.28\lib\net461\Dapper.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -103,7 +106,7 @@
     <Compile Include="DataModel\grupe.cs">
       <DependentUpon>AthenaModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="DataModel\links.cs">
+    <Compile Include="DataModel\linksSet.cs">
       <DependentUpon>AthenaModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataModel\profesori.cs">
@@ -125,6 +128,9 @@
     </Compile>
     <Compile Include="Pages\Teachers.xaml.cs">
       <DependentUpon>Teachers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\InsertCabiet.xaml.cs">
+      <DependentUpon>InsertCabiet.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\InsertGroup.xaml.cs">
       <DependentUpon>InsertGroup.xaml</DependentUpon>
@@ -217,6 +223,10 @@
     <Page Include="Pages\Teachers.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\InsertCabiet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\InsertGroup.xaml">
       <Generator>MSBuild:Compile</Generator>

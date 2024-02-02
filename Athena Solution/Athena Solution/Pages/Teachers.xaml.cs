@@ -51,19 +51,25 @@ namespace Athena_Solution.Pages
 
         public void DeleteTeachers(int IdProf)
         {
-            var deleteProf = context.profesori.FirstOrDefault(t => t.id_prof == IdProf);
-            var adminUser = context.users.FirstOrDefault(t => t.user_id == 1002);
-
-            if (adminUser != null)
+            try
             {
-                if (deleteProf != null)
+                var deleteProf = context.profesori.FirstOrDefault(t => t.id_prof == IdProf);
+                var adminUser = context.users.FirstOrDefault(t => t.user_id == 1);
+
+                if (adminUser.user_id == 1)
                 {
-                    context.profesori.Remove(deleteProf);
-                    context.SaveChanges();
+                    if (deleteProf != null)
+                    {
+                        context.profesori.Remove(deleteProf);
+                        context.SaveChanges();
+                    }
+                    else { MessageBox.Show("Profesorul cu ID dat nu a fost gasit!!", "Eroare", MessageBoxButton.OK, MessageBoxImage.Exclamation); }
                 }
-                else { MessageBox.Show("Profesorul cu ID dat nu a fost gasit!!", "Eroare", MessageBoxButton.OK, MessageBoxImage.Exclamation); }
             }
-            else { MessageBox.Show("Nu aveti drepturi de administrator", "Eroare", MessageBoxButton.OK, MessageBoxImage.Error); }
+            catch (Exception)
+            {
+                throw new Exception("Nu aveti drepturi de administrator");
+            }
         }
 
         public void UpdateTeachers()

@@ -46,9 +46,9 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="linksSet">
-      <EntityTypeMapping TypeName="AthenaModule.links">
-        <MappingFragment StoreEntitySet="links">
+    <EntitySetMapping Name="linksSet1">
+      <EntityTypeMapping TypeName="AthenaModule.linksSet">
+        <MappingFragment StoreEntitySet="linksSet">
           <ScalarProperty Name="id_cabinet" ColumnName="id_cabinet" />
           <ScalarProperty Name="id_grupa" ColumnName="id_grupa" />
           <ScalarProperty Name="id_profesor" ColumnName="id_profesor" />

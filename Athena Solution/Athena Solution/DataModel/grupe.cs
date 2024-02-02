@@ -17,7 +17,7 @@ namespace Athena_Solution.DataModel
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public grupe()
         {
-            this.links = new HashSet<links>();
+            this.linksSet = new HashSet<linksSet>();
         }
     
         public int id_grupa { get; set; }
@@ -27,6 +27,6 @@ namespace Athena_Solution.DataModel
         public Nullable<int> id_link { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<links> links { get; set; }
+        public virtual ICollection<linksSet> linksSet { get; set; }
     }
 }

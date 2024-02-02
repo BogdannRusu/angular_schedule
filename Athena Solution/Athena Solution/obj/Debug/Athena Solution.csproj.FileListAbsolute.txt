@@ -93,11 +93,13 @@ C:\Users\Bogdan.Rusu\Desktop\angular_schedule\Athena Solution\Athena Solution\ob
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\bin\Debug\Athena Solution.exe.config
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\bin\Debug\Athena Solution.exe
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\bin\Debug\Athena Solution.pdb
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\bin\Debug\Dapper.dll
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\bin\Debug\EntityFramework.dll
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\bin\Debug\EntityFramework.SqlServer.dll
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\bin\Debug\MaterialDesignColors.dll
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\bin\Debug\MaterialDesignThemes.Wpf.dll
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\bin\Debug\Microsoft.Xaml.Behaviors.dll
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\bin\Debug\Dapper.xml
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\bin\Debug\EntityFramework.xml
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\bin\Debug\EntityFramework.SqlServer.xml
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\bin\Debug\MaterialDesignColors.pdb
@@ -112,6 +114,7 @@ D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Pages\Groups.g.cs
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Pages\Home.g.cs
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Pages\Teachers.g.cs
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Views\InsertCabiet.g.cs
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Views\InsertGroup.g.cs
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Views\InsertTeachers.g.cs
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Views\LoginWindowView.g.cs
@@ -126,6 +129,7 @@ D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Pages\Groups.baml
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Pages\Home.baml
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Pages\Teachers.baml
+D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Views\InsertCabiet.baml
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Views\InsertGroup.baml
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Views\InsertTeachers.baml
 D:\Bogdan\Alternative Projects\angular_schedule\Athena Solution\Athena Solution\obj\Debug\Views\LoginWindowView.baml

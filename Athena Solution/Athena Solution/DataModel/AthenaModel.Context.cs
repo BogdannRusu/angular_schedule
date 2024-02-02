@@ -29,6 +29,6 @@ namespace Athena_Solution.DataModel
         public virtual DbSet<profesori> profesori { get; set; }
         public virtual DbSet<users> users { get; set; }
         public virtual DbSet<grupe> grupe { get; set; }
-        public virtual DbSet<links> linksSet { get; set; }
+        public virtual DbSet<linksSet> linksSet1 { get; set; }
     }
 }

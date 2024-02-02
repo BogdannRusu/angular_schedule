@@ -17,7 +17,7 @@ namespace Athena_Solution.DataModel
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public cabinete()
         {
-            this.links = new HashSet<links>();
+            this.linksSet = new HashSet<linksSet>();
         }
     
         public int id_cabinet { get; set; }
@@ -25,6 +25,6 @@ namespace Athena_Solution.DataModel
         public byte is_active { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<links> links { get; set; }
+        public virtual ICollection<linksSet> linksSet { get; set; }
     }
 }

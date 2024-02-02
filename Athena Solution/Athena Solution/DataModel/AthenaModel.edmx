@@ -9,7 +9,7 @@
           <Key>
             <PropertyRef Name="id_cabinet" />
           </Key>
-          <Property Name="id_cabinet" Type="int" Nullable="false" />
+          <Property Name="id_cabinet" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nr_cabinet" Type="int" Nullable="false" />
           <Property Name="is_active" Type="tinyint" Nullable="false" />
         </EntityType>
@@ -20,10 +20,10 @@
           <Property Name="id_grupa" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nume_grupa" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="is_active" Type="tinyint" Nullable="false" />
-          <Property Name="id_link" Type="int" />
           <Property Name="anul" Type="int" />
+          <Property Name="id_link" Type="int" />
         </EntityType>
-        <EntityType Name="links">
+        <EntityType Name="linksSet">
           <Key>
             <PropertyRef Name="id_link" />
           </Key>
@@ -40,8 +40,8 @@
           <Property Name="nume" Type="varchar" MaxLength="100" Nullable="false" />
           <Property Name="prenume" Type="varchar" MaxLength="100" Nullable="false" />
           <Property Name="patronimic" Type="varchar" MaxLength="100" />
-          <Property Name="data_activarii" Type="date" Nullable="false" />
-          <Property Name="end_data_activarii" Type="date" />
+          <Property Name="data_activarii" Type="datetime" Nullable="false" />
+          <Property Name="end_data_activarii" Type="datetime" />
           <Property Name="is_active" Type="smallint" Nullable="false" />
           <Property Name="functia" Type="varchar" MaxLength="100" Nullable="false" />
         </EntityType>
@@ -57,36 +57,36 @@
         </EntityType>
         <Association Name="FK__links__id_cabine__3C34F16F">
           <End Role="cabinete" Type="Self.cabinete" Multiplicity="1" />
-          <End Role="links" Type="Self.links" Multiplicity="*" />
+          <End Role="linksSet" Type="Self.linksSet" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="cabinete">
               <PropertyRef Name="id_cabinet" />
             </Principal>
-            <Dependent Role="links">
+            <Dependent Role="linksSet">
               <PropertyRef Name="id_cabinet" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__links__id_grupa__3B40CD36">
           <End Role="grupe" Type="Self.grupe" Multiplicity="1" />
-          <End Role="links" Type="Self.links" Multiplicity="*" />
+          <End Role="linksSet" Type="Self.linksSet" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="grupe">
               <PropertyRef Name="id_grupa" />
             </Principal>
-            <Dependent Role="links">
+            <Dependent Role="linksSet">
               <PropertyRef Name="id_grupa" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__links__id_profes__3A4CA8FD">
           <End Role="profesori" Type="Self.profesori" Multiplicity="1" />
-          <End Role="links" Type="Self.links" Multiplicity="*" />
+          <End Role="linksSet" Type="Self.linksSet" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="profesori">
               <PropertyRef Name="id_prof" />
             </Principal>
-            <Dependent Role="links">
+            <Dependent Role="linksSet">
               <PropertyRef Name="id_profesor" />
             </Dependent>
           </ReferentialConstraint>
@@ -94,20 +94,20 @@
         <EntityContainer Name="AthenaModuleStoreContainer">
           <EntitySet Name="cabinete" EntityType="Self.cabinete" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="grupe" EntityType="Self.grupe" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="links" EntityType="Self.links" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="linksSet" EntityType="Self.linksSet" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="profesori" EntityType="Self.profesori" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="users" EntityType="Self.users" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK__links__id_cabine__3C34F16F" Association="Self.FK__links__id_cabine__3C34F16F">
             <End Role="cabinete" EntitySet="cabinete" />
-            <End Role="links" EntitySet="links" />
+            <End Role="linksSet" EntitySet="linksSet" />
           </AssociationSet>
           <AssociationSet Name="FK__links__id_grupa__3B40CD36" Association="Self.FK__links__id_grupa__3B40CD36">
             <End Role="grupe" EntitySet="grupe" />
-            <End Role="links" EntitySet="links" />
+            <End Role="linksSet" EntitySet="linksSet" />
           </AssociationSet>
           <AssociationSet Name="FK__links__id_profes__3A4CA8FD" Association="Self.FK__links__id_profes__3A4CA8FD">
             <End Role="profesori" EntitySet="profesori" />
-            <End Role="links" EntitySet="links" />
+            <End Role="linksSet" EntitySet="linksSet" />
           </AssociationSet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
@@ -118,10 +118,10 @@
           <Key>
             <PropertyRef Name="id_cabinet" />
           </Key>
-          <Property Name="id_cabinet" Type="Int32" Nullable="false" />
+          <Property Name="id_cabinet" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="nr_cabinet" Type="Int32" Nullable="false" />
           <Property Name="is_active" Type="Byte" Nullable="false" />
-          <NavigationProperty Name="links" Relationship="AthenaModule.FK__links__id_cabine__3C34F16F" FromRole="cabinete" ToRole="links1" />
+          <NavigationProperty Name="linksSet" Relationship="AthenaModule.FK__links__id_cabine__3C34F16F1" FromRole="cabinete" ToRole="linksSet" />
         </EntityType>
         <EntityType Name="profesori">
           <Key>
@@ -131,11 +131,11 @@
           <Property Name="nume" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="prenume" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="patronimic" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="data_activarii" Type="DateTime" Nullable="false" Precision="0" />
-          <Property Name="end_data_activarii" Type="DateTime" Precision="0" />
+          <Property Name="data_activarii" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="end_data_activarii" Type="DateTime" Precision="3" />
           <Property Name="is_active" Type="Int16" Nullable="false" />
           <Property Name="functia" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="links" Relationship="AthenaModule.FK__links__id_profes__3A4CA8FD" FromRole="profesori" ToRole="links1" />
+          <NavigationProperty Name="linksSet" Relationship="AthenaModule.FK__links__id_profes__3A4CA8FD1" FromRole="profesori" ToRole="linksSet" />
         </EntityType>
         <EntityType Name="users">
           <Key>
@@ -152,18 +152,18 @@
           <EntitySet Name="profesori" EntityType="Self.profesori" />
           <EntitySet Name="users" EntityType="Self.users" />
           <EntitySet Name="grupe" EntityType="AthenaModule.grupe" />
-          <EntitySet Name="linksSet" EntityType="AthenaModule.links" />
-          <AssociationSet Name="FK__links__id_cabine__3C34F16F" Association="AthenaModule.FK__links__id_cabine__3C34F16F">
+          <EntitySet Name="linksSet1" EntityType="AthenaModule.linksSet" />
+          <AssociationSet Name="FK__links__id_cabine__3C34F16F1" Association="AthenaModule.FK__links__id_cabine__3C34F16F1">
             <End Role="cabinete" EntitySet="cabinete" />
-            <End Role="links1" EntitySet="linksSet" />
+            <End Role="linksSet" EntitySet="linksSet1" />
           </AssociationSet>
-          <AssociationSet Name="FK__links__id_grupa__3B40CD36" Association="AthenaModule.FK__links__id_grupa__3B40CD36">
+          <AssociationSet Name="FK__links__id_grupa__3B40CD361" Association="AthenaModule.FK__links__id_grupa__3B40CD361">
             <End Role="grupe" EntitySet="grupe" />
-            <End Role="links1" EntitySet="linksSet" />
+            <End Role="linksSet" EntitySet="linksSet1" />
           </AssociationSet>
-          <AssociationSet Name="FK__links__id_profes__3A4CA8FD" Association="AthenaModule.FK__links__id_profes__3A4CA8FD">
+          <AssociationSet Name="FK__links__id_profes__3A4CA8FD1" Association="AthenaModule.FK__links__id_profes__3A4CA8FD1">
             <End Role="profesori" EntitySet="profesori" />
-            <End Role="links1" EntitySet="linksSet" />
+            <End Role="linksSet" EntitySet="linksSet1" />
           </AssociationSet>
         </EntityContainer>
         <EntityType Name="grupe">
@@ -175,9 +175,9 @@
           <Property Name="is_active" Type="Byte" Nullable="false" />
           <Property Name="anul" Type="Int32" />
           <Property Name="id_link" Type="Int32" />
-          <NavigationProperty Name="links" Relationship="AthenaModule.FK__links__id_grupa__3B40CD36" FromRole="grupe" ToRole="links1" />
+          <NavigationProperty Name="linksSet" Relationship="AthenaModule.FK__links__id_grupa__3B40CD361" FromRole="grupe" ToRole="linksSet" />
         </EntityType>
-        <EntityType Name="links">
+        <EntityType Name="linksSet">
           <Key>
             <PropertyRef Name="id_link" />
           </Key>
@@ -185,42 +185,42 @@
           <Property Name="id_profesor" Type="Int32" Nullable="false" />
           <Property Name="id_grupa" Type="Int32" Nullable="false" />
           <Property Name="id_cabinet" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="cabinete" Relationship="AthenaModule.FK__links__id_cabine__3C34F16F" FromRole="links1" ToRole="cabinete" />
-          <NavigationProperty Name="grupe" Relationship="AthenaModule.FK__links__id_grupa__3B40CD36" FromRole="links1" ToRole="grupe" />
-          <NavigationProperty Name="profesori" Relationship="AthenaModule.FK__links__id_profes__3A4CA8FD" FromRole="links1" ToRole="profesori" />
+          <NavigationProperty Name="cabinete" Relationship="AthenaModule.FK__links__id_cabine__3C34F16F1" FromRole="linksSet" ToRole="cabinete" />
+          <NavigationProperty Name="grupe" Relationship="AthenaModule.FK__links__id_grupa__3B40CD361" FromRole="linksSet" ToRole="grupe" />
+          <NavigationProperty Name="profesori" Relationship="AthenaModule.FK__links__id_profes__3A4CA8FD1" FromRole="linksSet" ToRole="profesori" />
         </EntityType>
-        <Association Name="FK__links__id_cabine__3C34F16F">
+        <Association Name="FK__links__id_cabine__3C34F16F1">
           <End Type="AthenaModule.cabinete" Role="cabinete" Multiplicity="1" />
-          <End Type="AthenaModule.links" Role="links1" Multiplicity="*" />
+          <End Type="AthenaModule.linksSet" Role="linksSet" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="cabinete">
               <PropertyRef Name="id_cabinet" />
             </Principal>
-            <Dependent Role="links1">
+            <Dependent Role="linksSet">
               <PropertyRef Name="id_cabinet" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__links__id_grupa__3B40CD36">
+        <Association Name="FK__links__id_grupa__3B40CD361">
           <End Type="AthenaModule.grupe" Role="grupe" Multiplicity="1" />
-          <End Type="AthenaModule.links" Role="links1" Multiplicity="*" />
+          <End Type="AthenaModule.linksSet" Role="linksSet" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="grupe">
               <PropertyRef Name="id_grupa" />
             </Principal>
-            <Dependent Role="links1">
+            <Dependent Role="linksSet">
               <PropertyRef Name="id_grupa" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__links__id_profes__3A4CA8FD">
+        <Association Name="FK__links__id_profes__3A4CA8FD1">
           <End Type="AthenaModule.profesori" Role="profesori" Multiplicity="1" />
-          <End Type="AthenaModule.links" Role="links1" Multiplicity="*" />
+          <End Type="AthenaModule.linksSet" Role="linksSet" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="profesori">
               <PropertyRef Name="id_prof" />
             </Principal>
-            <Dependent Role="links1">
+            <Dependent Role="linksSet">
               <PropertyRef Name="id_profesor" />
             </Dependent>
           </ReferentialConstraint>
@@ -276,9 +276,9 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="linksSet">
-            <EntityTypeMapping TypeName="AthenaModule.links">
-              <MappingFragment StoreEntitySet="links">
+          <EntitySetMapping Name="linksSet1">
+            <EntityTypeMapping TypeName="AthenaModule.linksSet">
+              <MappingFragment StoreEntitySet="linksSet">
                 <ScalarProperty Name="id_cabinet" ColumnName="id_cabinet" />
                 <ScalarProperty Name="id_grupa" ColumnName="id_grupa" />
                 <ScalarProperty Name="id_profesor" ColumnName="id_profesor" />

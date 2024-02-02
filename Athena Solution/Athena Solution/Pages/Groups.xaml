@@ -10,9 +10,9 @@
              Background="White">
     <Grid>
         <DataGrid x:Name="dataGridGroups" d:ItemsSource="{d:SampleData ItemCount=5}"/>
-        <Button x:Name="buttonAddGroup" Content="Adaugati grupa" HorizontalAlignment="Left" Margin="838,581,0,0" VerticalAlignment="Top" Click="buttonAddGroup_Click"/>
-        <Button x:Name="buttonRefreshGroup" Content="Actualizati datele" HorizontalAlignment="Left" Margin="677,581,0,0" VerticalAlignment="Top" Click="buttonRefreshGroup_Click" Width="141"/>
-        <Button x:Name="buttonDeleteGroup" Content="Stergeti" HorizontalAlignment="Left" Margin="888,537,0,0" VerticalAlignment="Top" Click="buttonDeleteGroup_Click"/>
+        <Button x:Name="buttonAddGroup" Content="Adaugati grupa" HorizontalAlignment="Left" Margin="742,588,0,0" VerticalAlignment="Top" Click="buttonAddGroup_Click"/>
+        <Button x:Name="buttonRefreshGroup" Content="Actualizati datele" HorizontalAlignment="Left" Margin="581,588,0,0" VerticalAlignment="Top" Click="buttonRefreshGroup_Click" Width="141"/>
+        <Button x:Name="buttonDeleteGroup" Content="Stergeti" HorizontalAlignment="Left" Margin="792,544,0,0" VerticalAlignment="Top" Click="buttonDeleteGroup_Click"/>
         <Label x:Name="labelTitle" VerticalAlignment="Top" Margin="40,485,0,0" HorizontalAlignment="Left" FontSize="16" Content="Introduceti datele pentru stergere"/>
         <TextBox x:Name="txtIdGroup" HorizontalAlignment="Left" Margin="40,553,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="238"/>
 

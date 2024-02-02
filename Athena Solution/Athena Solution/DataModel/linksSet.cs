@@ -12,7 +12,7 @@ namespace Athena_Solution.DataModel
     using System;
     using System.Collections.Generic;
     
-    public partial class links
+    public partial class linksSet
     {
         public int id_link { get; set; }
         public int id_profesor { get; set; }
