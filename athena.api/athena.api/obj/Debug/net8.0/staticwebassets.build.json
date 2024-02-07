@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "sL0wDs5lTAHS5vc2p2rIhkO/qesujbDJ93JFWjUNfPM=",
+  "Source": "athena.api",
+  "BasePath": "_content/athena.api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

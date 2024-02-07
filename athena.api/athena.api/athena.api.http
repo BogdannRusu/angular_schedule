@@ -1,0 +1,6 @@
+@athena.api_HostAddress = http://localhost:5100
+
+GET {{athena.api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

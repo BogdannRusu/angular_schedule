@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "schedule_web": {
+    "schedule_web1": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/schedule_web",
+            "outputPath": "dist/schedule_web1",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -49,13 +49,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "6kb",
-                  "maximumError": "10kb"
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
                 }
               ],
               "outputHashing": "all"
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "schedule_web:build:production"
+              "buildTarget": "schedule_web1:build:production"
             },
             "development": {
-              "buildTarget": "schedule_web:build:development"
+              "buildTarget": "schedule_web1:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "schedule_web:build"
+            "buildTarget": "schedule_web1:build"
           }
         },
         "test": {
@@ -108,6 +108,6 @@
     }
   },
   "cli": {
-    "analytics": "18a9be17-b687-4235-bd38-2caa95009196"
+    "analytics": "4a4cea74-237d-43ef-9763-1414a68be16e"
   }
 }
