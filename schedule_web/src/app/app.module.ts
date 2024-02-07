@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { OrarComponent } from './orar/orar.component';
 import { ScheduleComponent } from './schedule/schedule.component';
+import { ClockComponent } from './analog-clock/analog-clock.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { ScheduleComponent } from './schedule/schedule.component';
     MainComponent,
     OrarComponent,
     ScheduleComponent,
+    ClockComponent,
   ],
   imports: [
     BrowserModule,

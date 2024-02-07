@@ -4,6 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { MainComponent } from './main/main.component';
 import { OrarComponent } from './orar/orar.component';
 import { ScheduleComponent } from './schedule/schedule.component';
+import { ClockComponent } from './analog-clock/analog-clock.component';
 
 const routes : Routes = [{
   //Login
@@ -22,6 +23,12 @@ const routes : Routes = [{
   path: 'orar',
   component: OrarComponent
 
+},
+
+//Ceas
+{
+   path: 'clock',
+   component: ClockComponent
 },
 
 {
