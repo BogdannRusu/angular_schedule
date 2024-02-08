@@ -6,12 +6,12 @@ body {
   }
   
   .type--A {
-    --line_color: #555555;
+    --line_color: #fa1f1f;
     --back_color: #fad3e8;
   }
   
   .type--B {
-    --line_color: #1b1919;
+    --line_color: rgb(244, 233, 23);
     --back_color: #b3bdfc;
   }
   

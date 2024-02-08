@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("athena.api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+de4c82c5f7826678197fd1c6bc4c35f221fa98be")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d8f9b958135c6c4ab7d597c7b81610e76c54f133")]
 [assembly: System.Reflection.AssemblyProductAttribute("athena.api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("athena.api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

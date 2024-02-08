@@ -1,10 +1,13 @@
 using athena.api.Models;
+using athena.api.Models.Data;
 using Dapper;
 using Microsoft.Data.SqlClient;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddTransient<AthenaDbContext>();
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -22,16 +25,17 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("profesori", async (IConfiguration config) =>
-{
-    var connectionString = config.GetConnectionString("DefaultConnection");
+//app.MapGet("profesori", async (IConfiguration config) =>
+//{
+//    var connectionString = config.GetConnectionString("DefaultConnection")!;
 
-    using var connect = new SqlConnection(connectionString);
-    const string sql = "Select * From profesori";
-    var profesori = await connect.QueryAsync<Profesori>(sql);
-    return Results.Ok(profesori);
+//    using var connect = new SqlConnection(connectionString);
+//    const string sql = "Select * From profesori";
 
-});
+//    var profesori = await connect.QueryAsync<Profesori>(sql);
+//    return Results.Ok(profesori);
+
+//});
 
 app.UseAuthorization();
 
