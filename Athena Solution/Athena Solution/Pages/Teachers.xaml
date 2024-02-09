@@ -13,10 +13,10 @@
             <Border BorderBrush="White" BorderThickness="1" Height="428" Width="782"/>
         </ListBox>
         <DataGrid x:Name="DataTeachers" Margin="0,0,0,193"/>
-        <Button x:Name="del_teachers" Content="Stergeti profesor" Margin="656,549,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="del_teachers_Click"/>
-        <Button x:Name="update_Teacher" Content="Actualizati profesorii" Margin="473,608,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="update_Teacher_Click"/>
+        <Button x:Name="del_teachers" Content="Stergeti profesor" Margin="656,539,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="del_teachers_Click" Height="30" Width="151"/>
+        <Button x:Name="update_Teacher" Content="Actualizati profesorii" Margin="456,604,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="update_Teacher_Click" Height="27" Width="174"/>
         <Label x:Name="labelTitle" Content="Introduceti datele pentru stergere" HorizontalAlignment="Left" Margin="64,516,0,0" VerticalAlignment="Top" FontSize="18"/>
-        <TextBox Text="" x:Name="txtDelProf" FontSize="18" materialDesign:HintAssist.Hint="Introduceti ID" BorderThickness="2" BorderBrush="{DynamicResource MaterialDesignDivider}"  Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="64,553,659,41" />
-        <Button x:Name="add_teachers" Content="Adaugati profesor" Margin="652,608,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="add_teachers_Click"/>
+        <Button x:Name="add_teachers" Content="Adaugati profesor" Margin="652,604,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="add_teachers_Click" Height="27" Width="155"/>
+        <TextBox x:Name="txtDelProf" HorizontalAlignment="Left" Margin="64,591,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="279" Height="27" FontSize="14"/>
     </Grid>
 </UserControl>
