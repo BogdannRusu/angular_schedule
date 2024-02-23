@@ -8,16 +8,19 @@ body {
   .type--A {
     --line_color: #fa1f1f;
     --back_color: #fad3e8;
+    font-family: 'Raleway', sans-serif;
   }
   
   .type--B {
     --line_color: rgb(244, 233, 23);
     --back_color: #eef9aa;
+    font-family: 'Raleway', sans-serif;
   }
   
   .type--C {
     --line_color: #2c4dd2;
     --back_color: #aefbef;
+    font-family: 'Raleway', sans-serif;
   }
   
   .button {

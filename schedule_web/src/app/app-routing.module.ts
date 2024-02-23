@@ -5,6 +5,7 @@ import { MainComponent } from './main/main.component';
 import { OrarComponent } from './orar/orar.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { ClockComponent } from './analog-clock/analog-clock.component';
+import { HeaderComponent } from './header/header.component';
 
 const routes : Routes = [
   //Login
@@ -22,9 +23,13 @@ const routes : Routes = [
   //Schedule
 {  path: 'program', component: ScheduleComponent },
 
-{
-  path: '', component: MainComponent
-}];
+  //Header
+{  path: 'header', component: HeaderComponent },
+
+  //Default path
+{  path: '', component: LoginComponent }
+
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
