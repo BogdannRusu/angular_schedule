@@ -6,13 +6,18 @@ import { ReactiveFormsModule, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
-  templateUrl: './login.component.html',
+  templateUrl: './login.component.html',  
   styleUrls: ['./login.component.css']
 })
 
 export class LoginComponent implements OnInit {
 
-  constructor(private themeService: ThemeService, private fb: FormBuilder, private router: Router) { }
+  constructor(
+    private themeService: ThemeService, 
+    private fb: FormBuilder, 
+    private router: Router
+    ) 
+    { }
 
   ngOnInit(): void {   this.setTheme();    }
   setTheme() { this.themeService.setThemeVariables('#1a1a2e', '#ffffff', '#0f3460'); }
