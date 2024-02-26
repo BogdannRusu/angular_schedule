@@ -13,7 +13,6 @@ import { HeaderComponent } from './header/header.component';
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
     MainComponent,
     OrarComponent,
     ScheduleComponent,
@@ -22,7 +21,9 @@ import { HeaderComponent } from './header/header.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    LoginComponent
+    
   ],
   providers: [
     provideClientHydration()
