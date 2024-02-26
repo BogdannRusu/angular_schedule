@@ -14,7 +14,6 @@ import { FlipperComponent } from './analog-clock/flipper/flipper.component';
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
     MainComponent,
     OrarComponent,
     ScheduleComponent,
@@ -24,7 +23,9 @@ import { FlipperComponent } from './analog-clock/flipper/flipper.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    LoginComponent
+    
   ],
   providers: [
     provideClientHydration()
