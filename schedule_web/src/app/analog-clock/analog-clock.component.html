@@ -1,9 +1,5 @@
 <div class="clock">
-    <div class="hour"></div>
-    <div class="min"></div>
-    <div class="sec"></div>
-  </div>
-  <div class="switch-cont">
-    <button class="switch-btn" (click)="switchTheme()">{{ switchBtnText }}</button>
-  </div>
-  
+  <app-flipper [value]="hour"></app-flipper>
+  <app-flipper [value]="minute"></app-flipper>
+  <app-flipper [value]="second"></app-flipper>
+</div>

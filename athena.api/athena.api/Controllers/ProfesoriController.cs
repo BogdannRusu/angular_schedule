@@ -1,7 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using athena.api.Models;
+using athena.api.Repository;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Data.SqlClient;
-using System.Data;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 
 namespace athena.api.Controllers
 {
@@ -9,35 +10,18 @@ namespace athena.api.Controllers
     [ApiController]
     public class ProfesoriController : ControllerBase
     {
-        private IConfiguration _configuration;
-
-        public ProfesoriController(IConfiguration configuration)
+        private readonly ProfesoriRepository _profesoriRepository;
+        public ProfesoriController(ProfesoriRepository profesoriRepository) 
         {
-            _configuration = configuration;
+            _profesoriRepository =  profesoriRepository;
         }
 
-        [HttpGet]
-        [Route("GetProfesori")]
-        public JsonResult GetProfesori()
+        [HttpPost]
+        public async Task<ActionResult> AddProfesori([FromBody] Profesori profesori)
         {
-            string sql = "Select * from profesori";
-            DataTable table = new DataTable();
-            string sqlDataSourse = _configuration.GetConnectionString("BogdanConnection");
-            SqlDataReader myReader;
-            using(SqlConnection myCon = new SqlConnection(sqlDataSourse))
-            {
-                myCon.Open();
-                using(SqlCommand myCommand = new SqlCommand(sql, myCon))
-                {
-                    myReader = myCommand.ExecuteReader();
-                    table.Load(myReader);
-                    myReader.Close();
-                    myCon.Close();
+            await _profesoriRepository.AddProfesori(profesori);
+            return Ok();
+        } 
 
-                }
-
-                return new JsonResult("Sau afisat datele cu succes");
-            }
-        }
     }
 }

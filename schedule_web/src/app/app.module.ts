@@ -9,6 +9,7 @@ import { OrarComponent } from './orar/orar.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { ClockComponent } from './analog-clock/analog-clock.component';
 import { HeaderComponent } from './header/header.component';
+import { FlipperComponent } from './analog-clock/flipper/flipper.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { HeaderComponent } from './header/header.component';
     ScheduleComponent,
     ClockComponent,
     HeaderComponent,
+    FlipperComponent,
   ],
   imports: [
     BrowserModule,
