@@ -22,8 +22,8 @@ export class LoginComponent implements OnInit {
     private themeService: ThemeService, 
     private router: Router
     ) {
-      this.username = 'bogdan.rusu';
-      this.password = 'brs302008';
+      this.username = '';
+      this.password = '';
       this.remember = false;
     }
 
