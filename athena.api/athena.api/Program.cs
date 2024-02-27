@@ -1,6 +1,6 @@
+using athena.api.Context;
 using athena.api.Models;
-using athena.api.Models.Data;
-using Dapper;
+using athena.api.Repository;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
@@ -11,7 +11,11 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddDbContext<AppDbContext>(option => option.UseSqlServer("name=ConnectionString:DefaultConnection"));
+
+//Register AppDbContext
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<AppDbContext>(option => option.UseSqlServer(connectionString));
+builder.Services.AddScoped<ProfesoriRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -22,11 +26,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
-
-
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();

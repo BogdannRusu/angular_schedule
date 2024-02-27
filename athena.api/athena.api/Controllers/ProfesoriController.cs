@@ -19,9 +19,16 @@ namespace athena.api.Controllers
         [HttpPost]
         public async Task<ActionResult> AddProfesori([FromBody] Profesori profesori)
         {
-            await _profesoriRepository.AddProfesori(profesori);
+            await _profesoriRepository.AddProfesoriAsync(profesori);
             return Ok();
-        } 
+        }
+
+        [HttpGet]
+        public async Task<ActionResult> GetProfesoriList()
+        {
+            var profi = await _profesoriRepository.GetAllProfesoriAsync();
+            return Ok(profi);
+        }
 
     }
 }
