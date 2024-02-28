@@ -43,7 +43,7 @@ namespace Athena_Solution.Views
                     var adaugGroup = new grupe
                     {
                         nume_grupa = txtNameGroup.Text,
-                        is_active = 1,
+                        is_active = true,
                         anul = Convert.ToInt32(txtYear.Text)
                         
                     };

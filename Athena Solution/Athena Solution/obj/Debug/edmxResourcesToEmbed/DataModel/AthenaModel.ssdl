@@ -1,12 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="AthenaModule.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+<Schema Namespace="AthenaModele.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="__EFMigrationsHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+    </Key>
+    <Property Name="MigrationId" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="ProductVersion" Type="nvarchar" MaxLength="32" Nullable="false" />
+  </EntityType>
   <EntityType Name="cabinete">
     <Key>
       <PropertyRef Name="id_cabinet" />
     </Key>
     <Property Name="id_cabinet" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="nr_cabinet" Type="int" Nullable="false" />
-    <Property Name="is_active" Type="tinyint" Nullable="false" />
+    <Property Name="is_active" Type="bit" />
   </EntityType>
   <EntityType Name="grupe">
     <Key>
@@ -14,7 +21,7 @@
     </Key>
     <Property Name="id_grupa" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="nume_grupa" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="is_active" Type="tinyint" Nullable="false" />
+    <Property Name="is_active" Type="bit" />
     <Property Name="anul" Type="int" />
     <Property Name="id_link" Type="int" />
   </EntityType>
@@ -37,7 +44,7 @@
     <Property Name="patronimic" Type="varchar" MaxLength="100" />
     <Property Name="data_activarii" Type="datetime" Nullable="false" />
     <Property Name="end_data_activarii" Type="datetime" />
-    <Property Name="is_active" Type="smallint" Nullable="false" />
+    <Property Name="is_active" Type="bit" />
     <Property Name="functia" Type="varchar" MaxLength="100" Nullable="false" />
   </EntityType>
   <EntityType Name="users">
@@ -86,7 +93,8 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="AthenaModuleStoreContainer">
+  <EntityContainer Name="AthenaModeleStoreContainer">
+    <EntitySet Name="__EFMigrationsHistory" EntityType="Self.__EFMigrationsHistory" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="cabinete" EntityType="Self.cabinete" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="grupe" EntityType="Self.grupe" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="linksSet" EntityType="Self.linksSet" Schema="dbo" store:Type="Tables" />

@@ -30,5 +30,26 @@ namespace athena.api.Controllers
             return Ok(profi);
         }
 
+        [HttpGet("{id}")]
+        public async Task<ActionResult> GetAllProfesoriById([FromRoute] int id)
+        {
+            var profId = await _profesoriRepository.GetProfesoriById(id);
+            return Ok(profId);
+        }
+
+        [HttpPut("{id}")]
+        public async Task<ActionResult> UpdateProfesori([FromRoute] int id, [FromBody] Profesori model)
+        {
+            await _profesoriRepository.UpdateProfesori(id, model);
+            return Ok();
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> DeleteProfesor([FromRoute] int id)
+        {
+            await _profesoriRepository.DeleteProfesorAsync(id);
+            return Ok();
+        }
+
     }
 }

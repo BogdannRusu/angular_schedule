@@ -26,7 +26,7 @@ namespace Athena_Solution.DataModel
         public string patronimic { get; set; }
         public System.DateTime data_activarii { get; set; }
         public Nullable<System.DateTime> end_data_activarii { get; set; }
-        public short is_active { get; set; }
+        public Nullable<bool> is_active { get; set; }
         public string functia { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

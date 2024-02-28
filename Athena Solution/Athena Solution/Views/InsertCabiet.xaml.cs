@@ -34,7 +34,7 @@ namespace Athena_Solution.Views
                     var adaugCab = new cabinete
                     {
                         nr_cabinet = Convert.ToInt32(txtNrCabinet.Text),
-                        is_active = 1,
+                        is_active = true,
                         
                     };
                     context.cabinete.Add(adaugCab);

@@ -22,6 +22,51 @@ namespace athena.api.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("athena.api.Models.Cabinete", b =>
+                {
+                    b.Property<int>("id_cabinet")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id_cabinet"));
+
+                    b.Property<bool?>("is_active")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("nr_cabinet")
+                        .HasColumnType("int");
+
+                    b.HasKey("id_cabinet");
+
+                    b.ToTable("Cabinete");
+                });
+
+            modelBuilder.Entity("athena.api.Models.Grupe", b =>
+                {
+                    b.Property<int>("id_grupa")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id_grupa"));
+
+                    b.Property<int>("anul")
+                        .HasColumnType("int");
+
+                    b.Property<int>("id_link")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("is_active")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("nume_grupa")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id_grupa");
+
+                    b.ToTable("Grupe");
+                });
+
             modelBuilder.Entity("athena.api.Models.Profesori", b =>
                 {
                     b.Property<int>("id_prof")

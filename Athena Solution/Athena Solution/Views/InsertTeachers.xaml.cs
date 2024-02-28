@@ -49,7 +49,7 @@ namespace Athena_Solution.Views
                         data_activarii = datePickerStartDate.DisplayDate,
                         end_data_activarii = datePickerEndActiv.DisplayDate,
                         functia = txtProfesie.Text,
-                        is_active = 1
+                        is_active = true
                     
                     };
                     context.profesori.Add(adaugprof);

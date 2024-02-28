@@ -25,10 +25,11 @@ namespace Athena_Solution.DataModel
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<C__EFMigrationsHistory> C__EFMigrationsHistory { get; set; }
         public virtual DbSet<cabinete> cabinete { get; set; }
+        public virtual DbSet<grupe> grupe { get; set; }
+        public virtual DbSet<linksSet> linksSet { get; set; }
         public virtual DbSet<profesori> profesori { get; set; }
         public virtual DbSet<users> users { get; set; }
-        public virtual DbSet<grupe> grupe { get; set; }
-        public virtual DbSet<linksSet> linksSet1 { get; set; }
     }
 }

@@ -132,6 +132,9 @@
     <Compile Include="DataModel\cabinete.cs">
       <DependentUpon>AthenaModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="DataModel\C__EFMigrationsHistory.cs">
+      <DependentUpon>AthenaModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="DataModel\grupe.cs">
       <DependentUpon>AthenaModel.tt</DependentUpon>
     </Compile>
@@ -198,11 +201,11 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Athena Solution_TemporaryKey.pfx" />
     <EntityDeploy Include="DataModel\AthenaModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>AthenaModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Athena Solution_TemporaryKey.pfx" />
     <None Include="DataModel\AthenaModel.edmx.diagram">
       <DependentUpon>AthenaModel.edmx</DependentUpon>
     </None>
@@ -302,6 +305,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="DataModel\AthenaModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

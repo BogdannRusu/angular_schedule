@@ -4,15 +4,16 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="d0bde1399c704f368074f47a80bc82ce" Name="Diagram1">
-        <EntityTypeShape EntityType="AthenaModule.cabinete" Width="1.5" PointX="7.875" PointY="4.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="AthenaModule.profesori" Width="1.5" PointX="1.75" PointY="3.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="AthenaModule.users" Width="1.5" PointX="9.625" PointY="1.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="AthenaModule.grupe" Width="1.5" PointX="5.25" PointY="5" />
-        <EntityTypeShape EntityType="AthenaModule.linksSet" Width="1.5" PointX="5.625" PointY="1.125" />
-        <AssociationConnector Association="AthenaModule.FK__links__id_cabine__3C34F16F1" />
-        <AssociationConnector Association="AthenaModule.FK__links__id_grupa__3B40CD361" />
-        <AssociationConnector Association="AthenaModule.FK__links__id_profes__3A4CA8FD1" />
+      <Diagram DiagramId="1a38d527a5a34018afa29dbdc2adf914" Name="Diagram1">
+        <EntityTypeShape EntityType="AthenaModele.C__EFMigrationsHistory" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AthenaModele.cabinete" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AthenaModele.grupe" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AthenaModele.linksSet" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="AthenaModele.profesori" Width="1.5" PointX="0.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="AthenaModele.users" Width="1.5" PointX="4.75" PointY="4.75" IsExpanded="true" />
+        <AssociationConnector Association="AthenaModele.FK__links__id_cabine__3C34F16F" ManuallyRouted="false" />
+        <AssociationConnector Association="AthenaModele.FK__links__id_grupa__3B40CD36" ManuallyRouted="false" />
+        <AssociationConnector Association="AthenaModele.FK__links__id_profes__3A4CA8FD" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

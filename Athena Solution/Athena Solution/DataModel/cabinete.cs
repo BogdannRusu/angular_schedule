@@ -22,7 +22,7 @@ namespace Athena_Solution.DataModel
     
         public int id_cabinet { get; set; }
         public int nr_cabinet { get; set; }
-        public byte is_active { get; set; }
+        public Nullable<bool> is_active { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<linksSet> linksSet { get; set; }
