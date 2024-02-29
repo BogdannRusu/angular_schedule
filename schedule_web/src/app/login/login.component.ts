@@ -36,9 +36,9 @@ export class LoginComponent implements OnInit {
   })
 
   login() {
-    // Implement your login logic here
-    console.log('Login clicked');
-  }
+     this.router.navigateByUrl("/main");
+
+  };
 
   //Return Username
   get Username() {  return this.loginForm.controls['username'];  }

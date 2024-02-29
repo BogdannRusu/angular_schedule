@@ -4,8 +4,9 @@ import { LoginComponent } from './login/login.component';
 import { MainComponent } from './main/main.component';
 import { OrarComponent } from './orar/orar.component';
 import { ScheduleComponent } from './schedule/schedule.component';
-import { ClockComponent } from './analog-clock/analog-clock.component';
-import { HeaderComponent } from './header/header.component';
+import { ProfesoriComponent } from './main/profesori/profesori.component';
+import { CabineteComponent } from './main/cabinete/cabinete.component';
+import { GrupeComponent } from './main/grupe/grupe.component';
 
 const routes : Routes = [
   //Login
@@ -17,14 +18,16 @@ const routes : Routes = [
    //Orar
   { path: 'orar', component: OrarComponent },
 
-   //Ceas
-  { path: 'clock', component: ClockComponent },
-
   //Schedule
 {  path: 'program', component: ScheduleComponent },
 
-  //Header
-{  path: 'header', component: HeaderComponent },
+
+//Profesori,Cabinete,Grupe
+{  path: 'profesori', component: ProfesoriComponent },
+{  path: 'cabinete', component: CabineteComponent },
+{  path: 'grupe', component: GrupeComponent },
+
+
 
   //Default path
 {  path: '', component: LoginComponent }

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { MatTableModule } from '@angular/material/table';
 
 import { AppRoutingModule } from './app-routing.module';
 import { LoginComponent } from './login/login.component';
@@ -7,9 +8,11 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { OrarComponent } from './orar/orar.component';
 import { ScheduleComponent } from './schedule/schedule.component';
-import { ClockComponent } from './analog-clock/analog-clock.component';
-import { HeaderComponent } from './header/header.component';
-import { FlipperComponent } from './analog-clock/flipper/flipper.component';
+import { ProfesoriComponent } from './main/profesori/profesori.component';
+import { GrupeComponent } from './main/grupe/grupe.component';
+import { CabineteComponent } from './main/cabinete/cabinete.component';
+import { provideHttpClient } from '@angular/common/http';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [
@@ -17,18 +20,21 @@ import { FlipperComponent } from './analog-clock/flipper/flipper.component';
     MainComponent,
     OrarComponent,
     ScheduleComponent,
-    ClockComponent,
-    HeaderComponent,
-    FlipperComponent,
+    ProfesoriComponent,
+    GrupeComponent,
+    CabineteComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LoginComponent
+    LoginComponent,
+    MatTableModule
     
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    provideHttpClient(),
+    provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
 })
