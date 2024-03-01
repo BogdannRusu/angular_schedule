@@ -7,6 +7,7 @@ import { CabineteComponent } from './main/cabinete/cabinete.component';
 import { ContainerComponent } from './main/containerProfesori/container.component';
 import { ContainerGrupeComponent } from './main/container-grupe/container-grupe.component';
 import { ContainerCabineteComponent } from './main/container-cabinete/container-cabinete.component';
+import { Error404Component } from './error404/error404.component';
 
 const routes : Routes = [
   //Login
@@ -19,6 +20,7 @@ const routes : Routes = [
 {  path: 'profesori/:id', component: ProfesoriComponent },
 {  path: 'cabinete', component: ContainerCabineteComponent },
 {  path: 'grupe', component: ContainerGrupeComponent },
+{  path: 'error', component: Error404Component },
 
 
 

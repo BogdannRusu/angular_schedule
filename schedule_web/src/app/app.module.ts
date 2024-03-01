@@ -14,6 +14,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { ContainerComponent } from './main/containerProfesori/container.component';
 import { ContainerGrupeComponent } from './main/container-grupe/container-grupe.component';
 import { ContainerCabineteComponent } from './main/container-cabinete/container-cabinete.component';
+import { Error404Component } from './error404/error404.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ContainerCabineteComponent } from './main/container-cabinete/container-
     ContainerComponent,
     ContainerGrupeComponent,
     ContainerCabineteComponent,
+    Error404Component,
   ],
   imports: [
     BrowserModule,
