@@ -6,23 +6,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { LoginComponent } from './login/login.component';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
-import { OrarComponent } from './orar/orar.component';
-import { ScheduleComponent } from './schedule/schedule.component';
 import { ProfesoriComponent } from './main/profesori/profesori.component';
 import { GrupeComponent } from './main/grupe/grupe.component';
 import { CabineteComponent } from './main/cabinete/cabinete.component';
 import { provideHttpClient } from '@angular/common/http';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { ContainerComponent } from './main/containerProfesori/container.component';
+import { ContainerGrupeComponent } from './main/container-grupe/container-grupe.component';
+import { ContainerCabineteComponent } from './main/container-cabinete/container-cabinete.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
-    OrarComponent,
-    ScheduleComponent,
     ProfesoriComponent,
     GrupeComponent,
     CabineteComponent,
+    ContainerComponent,
+    ContainerGrupeComponent,
+    ContainerCabineteComponent,
   ],
   imports: [
     BrowserModule,

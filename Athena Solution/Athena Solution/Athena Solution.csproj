@@ -28,7 +28,8 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <UpdateUrl>http://localhost/Athena Solution/</UpdateUrl>
-    <ApplicationRevision>2</ApplicationRevision>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>3</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -147,6 +148,8 @@
     <Compile Include="DataModel\users.cs">
       <DependentUpon>AthenaModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="DTO\CabinetDTO.cs" />
+    <Compile Include="DTO\GroupsDTO.cs" />
     <Compile Include="DTO\TeachersDTO.cs" />
     <Compile Include="DTO\UsersDTO.cs" />
     <Compile Include="Pages\Cabinet.xaml.cs">

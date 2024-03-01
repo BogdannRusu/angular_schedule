@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { HttpService } from '../../login/service/http.service';
-import {MatTableModule} from '@angular/material/table';
 import { DxDataGridModule } from 'devextreme-angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-profesori',
@@ -9,7 +9,7 @@ import { DxDataGridModule } from 'devextreme-angular';
   styleUrls: ['./profesori.component.css']
 })
 export class ProfesoriComponent implements OnInit {
-
+  router=inject(Router )
   profesoriList: any[] = [];
   httpService: HttpService;
 
@@ -17,14 +17,16 @@ export class ProfesoriComponent implements OnInit {
     this.httpService = httpService;
   }
   displayedColumns: string[] = [
-    'id_prof', 
-    'nume', 
-    'prenume', 
-    'patronimic', 
+    'id_prof',
+    'nume',
+    'prenume',
+    'patronimic',
     'data_activarii', 
     'end_data_activarii', 
     'is_active', 
-    'functia'];
+    'functia',
+    'action'
+  ];
     
   ngOnInit() {
     this.httpService.getAllProfesori().subscribe((data) => {
@@ -34,4 +36,10 @@ export class ProfesoriComponent implements OnInit {
       console.error(err);
   };
 }
+
+edit(id_prof:number){
+  console.log(id_prof)
+  this.router.navigateByUrl("/profesori" + id_prof)
+}
+
 }
